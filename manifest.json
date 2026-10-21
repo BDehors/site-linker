@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "站点链接助手",
+  "version": "2.0.0",
+  "description": "自动把网页中出现的科研、政府、专利、生活、软件等站点名称变成可点击链接。弹窗可搜索直达官网、速控分类，站点与触发词可自定义；点击链接自动复制句中关键词并在新页面自动粘贴，默认新开浏览器窗口并智能避让位置；AI 对话页可体检引用来源；纯本地运行，不收集任何数据。",
+  "permissions": ["storage"],
+  "background": { "service_worker": "src/background.js" },
+  "action": {
+    "default_title": "站点链接助手",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file:///*"],
+      "js": [
+        "src/citations/adapters.js",
+        "src/citations/extract.js",
+        "src/citations/audit.js",
+        "src/citations/card.js",
+        "src/citations/ledger.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "options_page": "src/options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

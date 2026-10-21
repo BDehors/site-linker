@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>站点链接助手</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <strong>站点链接助手</strong>
+  <span id="dict-ver"></span>
+</header>
+
+<div class="bar">
+  <button id="btn-all" type="button">全开</button>
+  <button id="btn-none" type="button">全关</button>
+  <span id="status" role="status"></span>
+</div>
+
+<div id="list" class="list"></div>
+
+<div class="search">
+  <input id="q" type="search" placeholder="输入站点名直达官网：如 淘宝、steam、知网" autocomplete="off">
+  <div id="results" class="results" hidden></div>
+</div>
+
+<footer>
+  <button id="open-options" class="primary" type="button">打开完整设置（改网址 / 加站点）</button>
+  <p class="hint"><a id="open-manual" href="#">使用指南</a></p>
+  <p id="ov-info" class="hint" hidden></p>
+</footer>
+
+<script src="popup.js"></script>
+</body>
+</html>

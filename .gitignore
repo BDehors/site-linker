@@ -1,0 +1,18 @@
+# 本地才有的目录：不进任何仓库/包（打包一律走 tools/pack.py 的显式清单）
+提交包/
+dist/
+*.zip
+
+# 打包脚本的本地补充词表
+tools/_pack-forbidden.txt
+
+# 杂项
+__pycache__/
+Thumbs.db
+.desktop.ini
+.DS_Store
+
+# AI 协作记录：含本地路径与过程讨论，不进公开仓库
+.workbuddy/
+.vscode/
+.idea/

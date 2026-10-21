@@ -1,0 +1,6 @@
+lists.json 生成报告 · 2026-10-19
+A 层（官方许可名单）解析出 194 家单位、224 个已收录域名
+B 层（三轮实测核实）补入 44 个域名
+驳掉的假转正 / 错挂候选见 BLACKLIST：cfn.cn 是银行网、audit.gov.cn 是审计署、sports.cn 是华奥星空、theory.cn 是思睿、clnews.com.cn 是长乐新闻网、cma.org.cn 是中华医学会、sxnews.cn 是绍兴网、ptpress.com.cn 是人民邮电出版社——全部按标题判据挡在门外
+community 41 条 / farmPatterns 5 条 / selfDomains 15 条
+输出：C:\Users\Dehors\Desktop\检索插件\src\citations\lists.json（50513 字节）

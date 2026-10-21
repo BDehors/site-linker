@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>站点链接助手 · 测试套件</title>
+<style>
+  :root { --ink:#1f2329; --muted:#6b7280; --line:#e3e6ea; --blue:#2563eb; --bg:#f6f7f9; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.85 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:900px; margin:0 auto; padding:0 22px; }
+  header.top { background:#101828; color:#fff; padding:34px 0 30px; }
+  header.top .crumb { margin:0 0 10px; font-size:13px; letter-spacing:.12em; color:#9aa4b2; }
+  header.top h1 { margin:0 0 10px; font-size:24px; }
+  header.top .sub { margin:0; color:#c9d2de; font-size:14px; }
+  main { padding:26px 0 8px; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; margin:0 0 22px; }
+  .card { display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; transition:border-color .15s, box-shadow .15s; }
+  .card:hover { border-color:var(--blue); box-shadow:0 4px 14px rgba(37,99,235,.10); }
+  .card .no { display:inline-block; font-size:12px; color:var(--blue); border:1px solid var(--blue); border-radius:4px; padding:0 6px; margin-bottom:8px; }
+  .card h2 { margin:0 0 6px; font-size:16.5px; }
+  .card p { margin:0; font-size:13.5px; color:var(--muted); }
+  .card .files { margin-top:10px; font-size:13px; }
+  .card .files a { color:var(--blue); text-decoration:none; margin-right:12px; }
+  .card .files a:hover { text-decoration:underline; }
+  h3.sec { font-size:16px; margin:30px 0 10px; padding-left:10px; border-left:4px solid var(--blue); }
+  .tip { border:1px solid #bfdbfe; background:#eff6ff; border-radius:10px; padding:13px 17px; margin:12px 0; font-size:13.5px; }
+  .tip strong { color:#1d4ed8; }
+  .tip code { background:#fff; border:1px solid #dbeafe; border-radius:4px; padding:0 5px; font-size:12.5px; }
+  table.check { border-collapse:collapse; width:100%; font-size:13.5px; background:#fff; }
+  table.check th, table.check td { border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top; }
+  table.check th { background:#f3f4f6; white-space:nowrap; }
+  table.check td:first-child { white-space:nowrap; font-weight:600; }
+  .note { background:#fff; border:1px solid var(--line); border-radius:10px; padding:13px 17px; font-size:13.5px; color:#374151; }
+  .note b { color:var(--ink); }
+  footer { color:var(--muted); font-size:12.5px; padding:26px 0 40px; }
+  footer .wrap { border-top:1px solid var(--line); padding-top:14px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="crumb">站点链接助手 · 测试套件</p>
+    <h1>用真实场景验收这个扩展</h1>
+    <p class="sub">先按 README 加载扩展，再依次打开下面三个场景页。正文里的站点名应该变成可点击链接；标注“不应链接”的内容应保持原样。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="cards">
+    <a class="card" href="quiz.html">
+      <span class="no">场景 01</span>
+      <h2>模拟练习：面对题目</h2>
+      <p>一份自编的信息检索练习题。读题时遇到站点名直接点开核查——这就是扩展最典型的使用场景。</p>
+    </a>
+    <a class="card" href="article.html">
+      <span class="no">场景 02</span>
+      <h2>文章阅读：引用与出处</h2>
+      <p>一篇带参考文献的长文。正文站点名自动变链接，“参考资料”自带出处链接；页内还有动态加载，用来验证新内容也能被处理。</p>
+    </a>
+    <div class="card">
+      <span class="no">场景 03</span>
+      <h2>文档样例：PDF / Word</h2>
+      <p>同一篇文章导出的 PDF 与 Word。所有出处都做成了文档内嵌链接，在浏览器/阅读器里点击即可跳转。</p>
+      <p class="files">
+        <a href="samples/article-sample.pdf">article-sample.pdf</a>
+        <a href="samples/article-sample.docx">article-sample.docx</a>
+      </p>
+    </div>
+  </section>
+
+  <h3 class="sec">打开前：两个最常见的“看不到效果”</h3>
+  <div class="tip">
+    <strong>① 本地文件页（file://）默认不跑内容脚本。</strong>三种解法任选：在 <code>edge://extensions</code> 打开本扩展的<strong>“允许访问文件 URL”</strong>；或者在本目录跑 <code>python -m http.server 8000</code>，然后访问 <code>http://localhost:8000/tests/</code>；或者直接把本套件部署到任意 http 站点。
+  </div>
+  <div class="tip">
+    <strong>② 更新过词典或代码后没重新加载。</strong>去 <code>edge://extensions</code> 点扩展卡片的“重新加载”，再刷新页面（F5）。
+  </div>
+
+  <h3 class="sec">验收清单</h3>
+  <table class="check">
+    <tr><th>页面</th><th>应该看到</th><th>不该出现</th></tr>
+    <tr>
+      <td>模拟练习</td>
+      <td>题面与参考答案里的站点名（如“国家统计局”“中国知网”“arXiv”）全部变成蓝色链接</td>
+      <td>“万方科技”保持纯文本；代码块里的名称不链接；原本就是链接的内容不被改动</td>
+    </tr>
+    <tr>
+      <td>文章阅读</td>
+      <td>正文站点名变链接；“参考资料”各条可直接点击；点“加载更多资料”后，新出现的站点名马上也变链接</td>
+      <td>引用块（BibTeX 示例）内不产生链接；手工写的链接不被二次处理</td>
+    </tr>
+    <tr>
+      <td>PDF / Word</td>
+      <td>文档中的出处均为可点击链接，跳转到对应官网</td>
+      <td>不需要“扩展生效”也有链接——见下方说明</td>
+    </tr>
+  </table>
+
+  <h3 class="sec">关于 PDF / Word：一个需要了解的技术事实</h3>
+  <div class="note">
+    <b>浏览器内置的 PDF 查看器和 Office 文件预览器不运行扩展脚本</b>，任何内容脚本类扩展都进不去。所以对 PDF / Word 这类文档，本套件的做法是：<b>把出处直接做进文档本身</b>（PDF 的链接注释、Word 的超链接字段），在浏览器里打开照样可以点击跳转。<br>
+    想体验“站点名自动变链接”的效果，请用网页版（<a href="article.html">场景 02</a>）——同一篇文章、同一批出处，对照着看最直观。<br>
+    <span style="color:#6b7280">样例文件由 <code>tools/make-samples.py</code> 从 article.html 自动生成，改完文章重新跑一次即可。</span>
+  </div>
+
+  <h3 class="sec">还想再压一层？</h3>
+  <div class="note">
+    ① 点工具栏上的扩展图标：弹窗里可以输入站点名直接搜索打开官网（试试输 steam 或 淘宝）；也可以勾选 / 取消分类（比如关掉“政府与数据”），已打开的页面不刷新也会立即变化。<br>
+    ② 进扩展设置页（<code>edge://extensions</code> 里点“扩展选项”）：<b>「点击链接时」</b>是自动复制/粘贴的总开关；<b>「我添加的站点」</b>只收纳你自己加的站点（和词库分开）；「站点修正」改词库条目的网址、触发词或停用。改完回本页刷新，立刻见效。<br>
+    ③ 自动复制验收：打开 <a href="article.html">场景 02</a> 拉到“顺手一试：点击链接自动复制”一段，点其中的豆瓣链接——“三体”会被复制，新窗口打开豆瓣后在那个窗口里点搜索框即自动粘贴（可粘多次，换窗口不粘）。<br>
+    ④ 一句多个引号验收：打开 <a href="quiz.html">场景 01</a> 第 11 题，点题面里的“中国知网”链接——“数字经济”与“税收”两个词会一起被复制（空格相连），打开知网后粘进高级检索的检索框即可。
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    本套件所有内容均为原创示例（含练习题与文章情节），仅用于验证“站点链接助手”的链接化效果；文中站点链接均指向各平台官网。
+  </div>
+</footer>
+</body>
+</html>

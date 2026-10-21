@@ -1,0 +1,141 @@
+:root {
+  --line: #e3e6ea;
+  --text: #1f2329;
+  --muted: #6b7280;
+  --accent: #2563eb;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 300px;
+  margin: 0;
+  font: 13px/1.6 "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 14px 8px;
+}
+
+header strong { font-size: 14px; }
+header span { font-size: 11px; color: var(--muted); }
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px 8px;
+}
+
+.bar button {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  border-radius: 5px;
+  padding: 2px 9px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bar button:hover { border-color: var(--accent); color: var(--accent); }
+#status { margin-left: auto; font-size: 11px; color: var(--accent); }
+
+.list {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.cat {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.cat:hover { background: #f6f7f9; }
+
+.cat input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.cat .nm { flex: 1; }
+.cat .ct { color: var(--muted); font-size: 11px; }
+
+/* —— 搜索：输入站点名直达官网 —— */
+
+.search { padding: 10px 14px 0; }
+
+.search input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 9px;
+  font: 12.5px/1.5 inherit;
+  font-family: inherit;
+}
+
+.search input:focus { outline: none; border-color: var(--accent); }
+
+.results {
+  margin-top: 6px;
+  border-top: 1px solid var(--line);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.res {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 7px 2px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.res:hover { background: #f6f7f9; }
+.res .nm { font-weight: 600; white-space: nowrap; }
+
+.res .u {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 58%;
+}
+
+.res-empty { padding: 10px 2px; color: var(--muted); font-size: 12px; }
+
+/* 搜索时，分类列表让位给结果 */
+body.searching .list { display: none; }
+
+footer { padding: 10px 14px 12px; }
+
+footer .primary {
+  width: 100%;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  padding: 7px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+footer .primary:hover { background: #1d4ed8; }
+
+.hint { margin: 8px 0 0; font-size: 11px; color: var(--muted); }
+.hint a { color: var(--accent); text-decoration: none; }
+.hint a:hover { text-decoration: underline; }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>站点链接助手 · 演示页</title>
+<style>
+  body { font: 15px/1.9 "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; color: #1f2329; }
+  h1 { font-size: 22px; }
+  .card { border: 1px solid #e3e6ea; border-radius: 10px; padding: 16px 20px; margin: 14px 0; background: #fff; }
+  .tag { display: inline-block; font-size: 12px; color: #2563eb; border: 1px solid #2563eb; border-radius: 4px; padding: 0 6px; margin-bottom: 8px; }
+  pre { background: #f3f4f6; border-radius: 8px; padding: 12px; overflow: auto; }
+  button { border: 1px solid #2563eb; background: #2563eb; color: #fff; border-radius: 6px; padding: 8px 18px; font-size: 14px; cursor: pointer; }
+  button:hover { background: #1d4ed8; }
+</style>
+</head>
+<body>
+  <h1>站点链接助手 · 演示页</h1>
+  <p>装好扩展后刷新本页（或任意网页），观察下面各区块：普通文本中的站点名应变成链接；标注“不应链接”的区块应保持原样。</p>
+
+  <div class="card">
+    <span class="tag">应链接：普通正文</span>
+    <p>写论文先用中国知网和万方数据查中文文献，英文文献看 ScienceDirect、SpringerLink 和 PubMed；预印本可以上 arXiv 和 bioRxiv；数据到国家统计局的国家数据查，开源数据集到 GitHub、Kaggle 和 Hugging Face 找；文献管理用 Zotero，写作用 Overleaf，翻译用 DeepL。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">应链接：长词优先 + 误报屏蔽</span>
+    <p>国家统计局每月发布数据，各省也有自己的统计局。注意“万方科技”是一家公司名，这里的“万方”不应该被链接；而单独的“万方数据”应该正常链接。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">不应链接：已有链接内部</span>
+    <p>这段话里有一个手工写的链接：<a href="https://www.cnki.net" target="_blank" rel="noopener noreferrer">中国知网官网</a>，它已经是链接，插件不会动它。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">不应链接：代码块</span>
+    <pre><code>// 这里的知网、GitHub、arXiv 都不应该被链接
+const sites = ["中国知网", "GitHub", "arXiv"];
+console.log(sites);</code></pre>
+  </div>
+
+  <div class="card">
+    <span class="tag">应链接：点击自动复制（v1.6.0）</span>
+    <p>他在豆瓣搜索《三体》的读者评论，又在知乎回答了"如何入门机器学习"这个问题；中国知网：查找学位论文的好地方。</p>
+    <p style="font-size:13px;color:#6b7280">点这句话里的站点链接：句中《书名号》、引号或站点名后冒号后的内容会被自动复制（有多个会全部复制）；官网打开后，在那个窗口里点搜索框即自动粘贴，可粘多次。设置页「点击链接时」可关闭。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">应链接：新窗口打开（v1.7.0）</span>
+    <p>查开源项目到 GitHub，写作用 Overleaf，点一下这两个链接试试：默认直接新开一个浏览器窗口，位置自动避让——当前窗口靠左就放右边，靠右就放左边。</p>
+    <p style="font-size:13px;color:#6b7280">中键点击、Ctrl / ⌘ + 点击仍按浏览器默认开新标签页。不需要可在设置页「点击链接时」取消勾选，与自动复制开关互相独立。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">应链接：动态内容（MutationObserver）</span>
+    <p id="dynamic">点击下面按钮追加一段文本，验证动态渲染的页面也能被处理。</p>
+    <button id="add" type="button">追加一段文本</button>
+  </div>
+
+  <script>
+    var n = 0;
+    document.getElementById('add').addEventListener('click', function () {
+      n++;
+      var p = document.createElement('p');
+      p.textContent = '第 ' + n + ' 段：查统计年鉴用国家数据，看规范到国家标准全文公开，逛开源社区上 GitLab。';
+      document.getElementById('dynamic').appendChild(p);
+    });
+  </script>
+</body>
+</html>

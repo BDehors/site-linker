@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>站点链接助手 · 使用指南</title>
+<style>
+  :root { --ink:#1f2329; --muted:#6b7280; --line:#e3e6ea; --blue:#2563eb; --bg:#f6f7f9; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.85 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:860px; margin:0 auto; padding:0 22px; }
+  header.hero { background:#101828; color:#fff; padding:38px 0 32px; }
+  header.hero .crumb { margin:0 0 10px; font-size:13px; letter-spacing:.12em; color:#9aa4b2; }
+  header.hero h1 { margin:0 0 10px; font-size:26px; }
+  header.hero .sub { margin:0; color:#c9d2de; font-size:14px; }
+  main { padding:26px 0 6px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin:0 0 16px; }
+  h2 { font-size:18px; margin:2px 0 10px; }
+  h3 { font-size:15px; margin:16px 0 6px; }
+  ul, ol { margin:6px 0 8px; padding-left:24px; }
+  li { margin:4px 0; }
+  b { color:#111; }
+  figure { margin:14px 0 6px; }
+  figure img { max-width:100%; display:block; border:1px solid var(--line); border-radius:10px; box-shadow:0 4px 14px rgba(16,24,40,.08); }
+  figcaption { font-size:12.5px; color:var(--muted); margin-top:7px; }
+  .en { font-size:13px; color:var(--muted); border-top:1px dashed var(--line); padding-top:10px; margin-top:12px; }
+  footer { color:var(--muted); font-size:12.5px; padding:8px 0 40px; }
+  code { background:#eef1f4; border-radius:4px; padding:1px 6px; font-size:13px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="crumb">站点链接助手 · 使用指南</p>
+    <h1>让每一个站点名，直通官网</h1>
+    <p class="sub">核对论文与数据来源 · 避开仿冒网站与广告位 · 可高度自定义 · 不收集任何数据</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>快速上手</h2>
+    <ol>
+      <li>装好后打开任意网页：正文里的站点名会变成蓝色链接，点击直达官网。</li>
+      <li>点浏览器工具栏上的扩展图标：弹窗里可以<b>输入站点名直接搜索打开官网</b>，也可以开关 6 类站点（默认全开）。</li>
+      <li>要更细的控制：点弹窗底部的"打开完整设置"——改网址、补触发词、加自己的站点。</li>
+    </ol>
+    <p>第一次安装时，本指南会自动打开一页；之后随时可以从弹窗底部的"使用指南"再次打开。</p>
+  </section>
+
+  <section class="card">
+    <h2>工具栏弹窗：速控 + 搜索直达</h2>
+    <p>点浏览器工具栏上的图标，弹出的小面板从上到下是：<b>分类开关</b> → <b>搜索框</b> → <b>打开完整设置</b>。分类开关改动即时生效，已打开的页面不用刷新就会跟着变。</p>
+    <figure>
+      <img src="manual-images/popup.png" alt="弹窗面板">
+      <figcaption>弹窗：6 类站点一键开关；搜索框在中间，"打开完整设置"在最下面。</figcaption>
+    </figure>
+    <figure>
+      <img src="manual-images/popup-search.png" alt="弹窗搜索">
+      <figcaption>搜索支持中文名、简称、英文名和域名（如：知网、steam、gov.uk）。点结果或按回车，新标签页直接打开官网。</figcaption>
+    </figure>
+  </section>
+
+  <section class="card">
+    <h2>网页里效果长这样</h2>
+    <p>正文里的站点名自动变成链接；<b>代码块、已有的链接、输入框里的内容不会被动</b>。长词优先：出现"国家统计局"时整词命中，不会拆成"统计局"；"豆瓣酱""京东大鼓"这类词会自动跳过。</p>
+    <figure>
+      <img src="manual-images/page-links.jpg" alt="网页效果">
+      <figcaption>示例文章：正文中的站点名成链，文末"参考资料"可直接点击核对出处。</figcaption>
+    </figure>
+  </section>
+
+  <section class="card">
+    <h2>点击链接：自动复制 + 新页面自动粘贴</h2>
+    <p>读到"他在豆瓣搜索<b>《三体》</b>的评论"这类句子时，点一下变黑的"豆瓣"链接：这一句话里<b>可复制的内容会被自动抄走</b>，官网在新窗口打开后，<b>点一下搜索框就自动粘进去</b>——抄书单、搜片名、查词条都不用再来回复制粘贴。</p>
+    <h3>哪些内容会被复制（按优先级；引号 / 书名号有多个时全都要）</h3>
+    <ul>
+      <li><b>《书名号》</b>里的内容：他在豆瓣搜索《三体》→ 复制<b>三体</b>；</li>
+      <li><b>引号</b>里的内容（"…" “…” ‘…’ 「…」 『…』，不含英文直单引号 '…'——否则 don't 这类缩写会被切坏）：知乎回答了"如何入门机器学习"→ 复制<b>如何入门机器学习</b>；</li>
+      <li><b>站点名之后冒号</b>后到第一个逗号/句号的内容：中国知网：查找学位论文的好地方 → 复制<b>查找学位论文的好地方</b>。</li>
+    </ul>
+    <p>同一句里出现多个引号或书名号时，<b>会全部复制、按顺序用空格连起来</b>：检索主题为“数字经济”与“税收”的文献，点这句话里的站点链接，复制到的是<b>数字经济 税收</b>，打开知网直接粘进检索框，删掉不要的词就行。</p>
+    <p>三种都没有（比如"中国知网是一个文献数据库"）就只打开链接、不复制。复制之后 <b>10 分钟内</b>有效：在点击链接时<b>新打开的那个浏览器窗口</b>里（关掉“新窗口打开”开关时就是同窗口的新标签页），点任意空输入框（搜索框、文本框均可）即自动粘贴，而且<b>可以粘多次</b>——高级检索有几个检索框就粘几次，粘过的地方有内容就不会重复粘。换到别的窗口不粘，也不会粘回原来那个页面——自动粘贴<b>只在顶层页面生效</b>，内嵌 iframe 里不粘（避免粘回来源页内嵌的页面）。</p>
+    <p>不需要这个功能：设置页 →「点击链接时」→ 取消勾选"自动复制句中的关键词，并在新页面自动粘贴"即可，随时可以再打开。</p>
+    <p>另外，点击链接默认<b>新开一个浏览器窗口</b>（而不是新标签页），位置自动避让：当前窗口左半屏吸附就放右半屏、右半屏吸附就放左半屏，普通窗口紧挨着当前窗口放；多显示器等拿不准坐标的场景按系统默认级联。中键点击、Ctrl / ⌘ + 点击仍按浏览器默认开新标签页。不需要就取消勾选"在新窗口打开链接（而不是新标签页）"——两个开关互不影响。</p>
+    <figure>
+      <img src="manual-images/options-prefs.jpg" alt="设置页：点击链接时">
+      <figcaption>设置页「点击链接时」：两个勾选框分别管住“复制 + 粘贴”与“新窗口打开”，默认都开启，互相独立。</figcaption>
+    </figure>
+  </section>
+
+  <section class="card">
+    <h2>设置页：分类开关 + 点击链接时 + 我添加的站点 + 站点修正</h2>
+    <p>设置页从上到下四块，各管一件事：</p>
+    <ul>
+      <li><b>分类开关</b>：6 类站点加"自定义站点"，勾选即存、即时生效；</li>
+      <li><b>点击链接时</b>：自动复制 + 自动粘贴、新窗口打开两个开关（默认开，规则见上一节）；</li>
+      <li><b>我添加的站点</b>：只放你自己添加的站点——和词库分类、和"站点修正"完全分开，时间久了也一眼看清哪些是自己加的；弹窗里的"自定义站点"分类就是整体开关这些站点用；</li>
+      <li><b>站点修正</b>：只针对词库自带条目——搜到任意条目<b>改网址、补充触发词、停用</b>。</li>
+    </ul>
+    <p>另外还能从 Excel / 表格复制"名称、提示词、网址"三列<b>批量粘贴</b>（名称与词库一致 = 修正，不一致 = 进"我添加的站点"），以及<b>导出 / 导入 JSON</b> 备份、换设备或分享。</p>
+    <p>所有修改保存在你自己的浏览器里（跟随账号同步），<b>插件更新不会覆盖</b>。</p>
+    <figure>
+      <img src="manual-images/options.jpg" alt="设置页站点修正">
+      <figcaption>设置页（局部）：搜索、条目列表（带"已修正/已停用"标记），每条都有"编辑"。</figcaption>
+    </figure>
+    <figure>
+      <img src="manual-images/user-sites.jpg" alt="设置页：我添加的站点">
+      <figcaption>「我添加的站点」专区：只列自己添加的站点，每条可编辑 / 删除，与词库条目分开。</figcaption>
+    </figure>
+    <figure>
+      <img src="manual-images/options-edit.jpg" alt="编辑条目">
+      <figcaption>编辑面板：改网址、追加触发词、一键停用，或"恢复词库默认"。</figcaption>
+    </figure>
+  </section>
+
+  <section class="card">
+    <h2>常见问题</h2>
+    <h3>看不到效果？</h3>
+    <ul>
+      <li>本地文件页（<code>file://</code>）：需要在扩展详情页打开"允许访问文件 URL"，或起一个本地服务（<code>python -m http.server</code>）再打开。</li>
+      <li>刚更新过：到 <code>edge://extensions</code> 点扩展卡片的"重新加载"，再刷新页面（F5）。</li>
+      <li>检查对应分类是不是被关掉了——弹窗里一眼就能看到。</li>
+    </ul>
+    <h3>PDF 里点链接，整个标签页被替换了？</h3>
+    <p>这是浏览器自带 PDF 阅读器的固有行为（Edge / Chrome 都一样，没有可改的开关）。<b>按住 Ctrl 点击、按鼠标中键，或在链接上右键选"在新标签页中打开"</b>，就能保住 PDF 页面、在新标签里打开官网。网页里的链接本来就是新标签打开，不受影响。</p>
+    <h3>发现某个网址不对，或想加站点？</h3>
+    <p>在设置页"站点修正"里直接改，自己立刻生效；自己添加的站点在"我添加的站点"里管理；也可以导出修正 JSON 发给维护者，或到仓库提 Issue / PR，让所有使用者一起受益。</p>
+    <h3>更新插件，会丢自己添加的网站吗？</h3>
+    <p><b>不会。</b>你的分类开关、修正和自添加站点都存放在浏览器的扩展存储里（`chrome.storage.sync`），它不随插件更新清空。1.6.0 起自添加站点改存独立键 `siteLinker.userSites`，旧版数据在更新时自动搬过去（读不到时也有旧键回退），无需任何操作。以下三种情况才会丢：<b>卸载后重装</b>、<b>清除浏览器数据</b>、或扩展 ID 变化（如从开发者加载的副本换成商店版）——建议偶尔在"批量更新与备份"里导出一份 JSON。</p>
+    <h3>会收集我的数据吗？</h3>
+    <p>不会。扩展不发起任何网络请求（无远程代码、无统计、无追踪）；唯一的本地存储是你的分类开关和自己填写的修正，保存在你的浏览器账号里用于跨设备同步，开发者读不到。</p>
+  </section>
+
+  <section class="card">
+    <h2>关于</h2>
+    <p>版本号在弹窗右上角；MIT 许可。content script 骨架借鉴 weiningwei 的 Auto Linkify（MIT）。</p>
+    <p class="en">In short: this extension turns site names on web pages into direct links to official sites; the toolbar popup adds a local search that jumps straight to official pages (bypassing fake/ad results); everything is editable locally; and it collects nothing. Inside a PDF, hold Ctrl (or middle-click) a link to open it in a new tab.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">站点链接助手 · 使用指南 · 本页所有截图均来自扩展本身</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,561 @@
+{
+ "round": 2,
+ "method": "第一轮 title 判据没命中的，第二轮改整页正文自名匹配（出现 >=2 次才算站点自称）",
+ "promotedCount": 2,
+ "unresolvedCount": 44,
+ "promoted": [
+  {
+   "name": "中国银行保险报网",
+   "domain": "www.cfn.cn",
+   "evidence": "body-grep [utf-8] [('金融监管', 4)]",
+   "tokens": [
+    "中国银行保险报",
+    "金融监管"
+   ],
+   "trace": [
+    "www.cfn.cn -> 200 [utf-8] 标题未含专名 ['中国银行保险报', '金融监管'] | title=银行网-银行业信息交流平台-商业银行-城商行-农商行-官方-隶属于中金网投（北京）资产管理有限公司 | keywords=银行网，银行在线，中国银行业信息网络平台，中国银行业，银行， 股份制银行、城商行、农商行、村镇银行"
+   ]
+  },
+  {
+   "name": "北青网",
+   "domain": "www.ynet.com",
+   "evidence": "body-grep [utf8] [('北青网', 2), ('北京青年报', 2)]",
+   "tokens": [
+    "北青网",
+    "北京青年报"
+   ],
+   "trace": [
+    "www.ynet.com -> 200 [utf8] 标题未含专名 ['北青网', '北京青年报'] | title=首页_YNET.com北青新媒体",
+    "www.benber.com -> 200 [utf-8] 标题未含专名 ['北青网', '北京青年报'] | title=中投网-创新经济的智识 让投资者看到未来 | keywords=中投，投中，投资中国，中国投资，中投网，网投中国，投资网，投资信息，中国投资网，中网资讯，今日资本，中国财经，中国经济，创业投资网，投 资界，投资创业，创业项目"
+   ]
+  }
+ ],
+ "unresolved": [
+  {
+   "name": "法治网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "法治网",
+    "法治日报"
+   ],
+   "trace": [
+    "www.legaldaily.com.cn -> 200 [utf-8] 标题未含专名 ['法治网', '法治日报'] | title=",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "环球网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "环球网"
+   ],
+   "trace": [
+    "www.huanqiu.com -> 200 [utf-8] 标题未含专名 ['环球网'] | ",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "海外网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "海外网",
+    "人民日报海外版"
+   ],
+   "trace": [
+    "www.haiwainet.cn -> 200 [utf-8(ignore)] 标题未含专名 ['海外网', '人民日报海外版'] | ",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "理论网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "理论网",
+    "理论"
+   ],
+   "trace": [
+    "www.theory.cn -> 200 [utf-8] 标题未含专名 ['理论网', '理论'] | title=首页 - Theory思睿官网",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国妇女网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国妇女网"
+   ],
+   "trace": [
+    "www.women.org.cn -> 200 [UTF-8] 标题未含专名 ['中国妇女网'] | title=中华全国妇女联合会-首页",
+    "round2 body-grep 命中 [('中国妇女网', 1)]（不足 2 次）"
+   ]
+  },
+  {
+   "name": "半月谈网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "半月谈"
+   ],
+   "trace": [
+    "www.banyuetan.org -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国税务报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国税务报",
+    "中国税网"
+   ],
+   "trace": [
+    "www.ctaxnews.net.cn -> 200 [utf-8] 标题未含专名 ['中国税务报', '中国税网'] | ",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "环球人物网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "环球人物"
+   ],
+   "trace": [
+    "www.hqrww.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国县域经济报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "县域经济"
+   ],
+   "trace": [
+    "www.xianyuangjw.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "人民邮电报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "人民邮电报"
+   ],
+   "trace": [
+    "www.ptpress.com.cn -> 200 [utf-8] 标题未含专名 ['人民邮电报'] | title=人民邮电出版社 - 人民邮电出版社 | keywords=人民邮电出版社、科技出版、教育出版、大众出版，信息技术、通信、工业技术、科普、经济管理、摄影、艺术、运动与休闲、心理学、少儿、大中专教材",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国教育新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国教育报",
+    "中国教育新闻网"
+   ],
+   "trace": [
+    "www.jyb.cn -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国民族网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国民族网",
+    "中国民族报"
+   ],
+   "trace": [
+    "www.mzzjw.cn -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国环境网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国环境网",
+    "中国环境报"
+   ],
+   "trace": [
+    "www.cenews.com.cn -> 403 "
+   ]
+  },
+  {
+   "name": "中国知识产权资讯网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国知识产权报",
+    "知识产权资讯网"
+   ],
+   "trace": [
+    "www.iprnews.com -> 403 "
+   ]
+  },
+  {
+   "name": "中国安全生产网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国安全生产网",
+    "中国应急管理报"
+   ],
+   "trace": [
+    "www.aqsc.cn -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+   ]
+  },
+  {
+   "name": "民主与法制网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "民主与法制"
+   ],
+   "trace": [
+    "www.mzyfz.com -> 410 "
+   ]
+  },
+  {
+   "name": "中国经营网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国经营报",
+    "中国经营网"
+   ],
+   "trace": [
+    "www.cbihw.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "改革网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "改革网",
+    "中国改革报"
+   ],
+   "trace": [
+    "www.reform.org.cn -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+   ]
+  },
+  {
+   "name": "中国气象新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国气象新闻网",
+    "中国气象报"
+   ],
+   "trace": [
+    "www.nmc.cn -> 200 [UTF-8] 标题未含专名 ['中国气象新闻网', '中国气象报'] | title=关注阴晴冷暖，守望四时安康",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国绿色时报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国绿色时报",
+    "绿色中国"
+   ],
+   "trace": [
+    "www.cdfp.com.cn -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "农视网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "农视网",
+    "中国农业"
+   ],
+   "trace": [
+    "www.nongshiwang.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国交通新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国交通报",
+    "中国交通新闻网"
+   ],
+   "trace": [
+    "www.zgjtwz.com.cn -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国建设新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国建设报",
+    "中国建设新闻网"
+   ],
+   "trace": [
+    "www.chinajsb.cn -> 200 [utf-8(ignore)] 标题未含专名 ['中国建设报', '中国建设新闻网'] | ",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国劳动保障新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国劳动保障报",
+    "劳动保障"
+   ],
+   "trace": [
+    "www.clnews.com.cn -> 200 [utf-8] 标题未含专名 ['中国劳动保障报', '劳动保障'] | title=长乐新闻网_长乐区互联网新闻中心 | keywords=长乐新闻网,长乐,长乐互联网中心,长乐区互联网新闻中心",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国组织人事报新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国组织人事报"
+   ],
+   "trace": [
+    "www.zzrsb.com.cn -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国财经报网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国财经报"
+   ],
+   "trace": [
+    "www.cfn.cn -> 200 [utf-8] 标题未含专名 ['中国财经报'] | title=银行网-银行业信息交流平台-商业银行-城商行-农商行-官方-隶属于中金网投（北京）资产管理有限公司 | keywords=银行网，银行在线，中国银行业信息网络平台，中国银行业，银行， 股份制银行、城商行、农商行、村镇银行",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国市场监管新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国市场监管报",
+    "市场监管"
+   ],
+   "trace": [
+    "www.cmrn.com.cn -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+   ]
+  },
+  {
+   "name": "中国消费者网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国消费者报",
+    "中国消费网"
+   ],
+   "trace": [
+    "www.ccn.com.cn -> 521 "
+   ]
+  },
+  {
+   "name": "中国邮政快递报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国邮政快递报",
+    "快递"
+   ],
+   "trace": [
+    "www.cepnews.com.cn -> 200 [UTF-8] 标题未含专名 ['中国邮政快递报', '快递'] | title=中国环保新闻网|环保网 | keywords=环保,环保网,中国环保,中国环保网,环保新闻网,中国环保新闻网,环保门户网站,环保新闻,环保资讯,环保网站,环境,污染,环境污染,向污染宣战,污染治理,生态环境",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国煤炭报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国煤炭报"
+   ],
+   "trace": [
+    "www.ccn.com -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国医药报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国医药报"
+   ],
+   "trace": [
+    "www.cma.org.cn -> 200 [utf-8] 标题未含专名 ['中国医药报'] | title=中华医学会",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "中国民航报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国民航报",
+    "民航局"
+   ],
+   "trace": [
+    "www.caacnews.com.cn -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "华夏经纬网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "华夏经纬"
+   ],
+   "trace": [
+    "www.huaxia.com -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国侨刊",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国侨刊"
+   ],
+   "trace": [
+    "www.chinaqk.com -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "东方网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "东方网"
+   ],
+   "trace": [
+    "www.eastday.com -> 302 https://www.eastday.com/"
+   ]
+  },
+  {
+   "name": "金羊网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "金羊网",
+    "羊城晚报"
+   ],
+   "trace": [
+    "www.ycwb.com -> 200 [utf-8(ignore)] 标题未含专名 ['金羊网', '羊城晚报'] | ",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "上游新闻",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "上游新闻"
+   ],
+   "trace": [
+    "www.shangyexx.com -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "cqcb.com -> 403 "
+   ]
+  },
+  {
+   "name": "广西新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "广西新闻网",
+    "广西日报"
+   ],
+   "trace": [
+    "www.gxnews.com.cn -> 412 "
+   ]
+  },
+  {
+   "name": "贵州网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "多彩贵州网"
+   ],
+   "trace": [
+    "www.gog.cn -> None ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+   ]
+  },
+  {
+   "name": "宁夏新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "宁夏新闻网"
+   ],
+   "trace": [
+    "www.nxnews.net -> 412 "
+   ]
+  },
+  {
+   "name": "天山网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "天山网"
+   ],
+   "trace": [
+    "www.ts.cn -> 200 [utf-8] 标题未含专名 ['天山网'] | ",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  },
+  {
+   "name": "西部网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "西部网",
+    "陕西"
+   ],
+   "trace": [
+    "www.cnwest.com -> None URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 al"
+   ]
+  },
+  {
+   "name": "中国江西网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国江西网",
+    "大江网"
+   ],
+   "trace": [
+    "www.jxnews.com.cn -> None URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 al"
+   ]
+  },
+  {
+   "name": "山西新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "山西新闻网"
+   ],
+   "trace": [
+    "www.sxnews.cn -> 200 [utf-8] 标题未含专名 ['山西新闻网'] | title=绍兴网",
+    "round2 body-grep 命中 无（不足 2 次）"
+   ]
+  }
+ ]
+}

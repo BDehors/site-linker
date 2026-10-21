@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>睡不够，真的更容易感冒吗：一次从论文到数据的核查 · 示例文章</title>
+<style>
+  :root { --ink:#20242b; --muted:#69707d; --line:#e4e7ec; --blue:#1f5fbf; --accent:#b4462e; --bg:#fbfaf7; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.95 "Georgia","Songti SC","SimSun",serif; color:var(--ink); background:var(--bg); }
+  .topbar { background:#101828; color:#c9d2de; font:13.5px/1.6 "Segoe UI","Microsoft YaHei",sans-serif; }
+  .topbar .wrap { max-width:820px; margin:0 auto; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; }
+  .topbar a { color:#9db4d6; text-decoration:none; }
+  .topbar a:hover { color:#fff; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 22px; }
+  article { padding:34px 0 10px; }
+  .demo-chip { display:inline-block; font:12.5px/1.6 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--accent); border:1px solid var(--accent); border-radius:4px; padding:1px 8px; margin-bottom:14px; }
+  h1.title { font-size:31px; line-height:1.42; margin:0 0 12px; font-weight:700; letter-spacing:.2px; }
+  p.byline { font:14px/1.7 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--muted); margin:0 0 4px; }
+  p.dek { font-size:17.5px; color:#3c434d; margin:18px 0 6px; }
+  hr.rule { border:0; border-top:1px solid var(--line); margin:22px 0 26px; }
+  h2 { font:700 21px/1.6 "Segoe UI","Microsoft YaHei",sans-serif; margin:36px 0 10px; }
+  p { margin:0 0 16px; text-align:justify; }
+  .chain { background:#fff; border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:8px; padding:14px 20px; margin:20px 0 6px; font-size:15px; }
+  .chain b { display:block; font:700 15px/1.8 "Segoe UI","Microsoft YaHei",sans-serif; margin-bottom:4px; }
+  .chain ol { margin:6px 0 2px; padding-left:24px; }
+  .chain li { margin:3px 0; }
+  blockquote { margin:22px 0; padding:4px 20px; border-left:3px solid var(--line); color:#4a515c; font-style:italic; }
+  blockquote footer { font:13px/1.7 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--muted); font-style:normal; margin-top:6px; }
+  a { color:var(--blue); }
+  h2.refs-title { margin-top:40px; }
+  ol.refs { font:14.5px/1.9 "Segoe UI","Microsoft YaHei",sans-serif; padding-left:26px; }
+  ol.refs li { margin:7px 0; }
+  ol.refs .src { color:var(--muted); }
+  .appendix { margin-top:38px; }
+  .appendix pre { background:#f4f5f7; border:1px solid var(--line); border-radius:8px; padding:13px 16px; overflow:auto; font:13px/1.7 Consolas,"Courier New",monospace; color:#343a42; }
+  .appendix .hint { font:12.5px/1.7 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--muted); }
+  .more { background:#fff; border:1px solid var(--line); border-radius:10px; padding:15px 20px; margin:30px 0 10px; }
+  .more b { font:700 15px/1.8 "Segoe UI","Microsoft YaHei",sans-serif; }
+  .more button { margin-top:8px; border:1px solid var(--blue); background:var(--blue); color:#fff; border-radius:6px; padding:7px 18px; font:14px "Segoe UI","Microsoft YaHei",sans-serif; cursor:pointer; }
+  .more button:hover { background:#174a94; }
+  #more p { font:15px/1.9 "Segoe UI","Microsoft YaHei",sans-serif; }
+  .article-footer { margin:34px 0 46px; padding-top:14px; border-top:1px solid var(--line); font:13px/1.8 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--muted); }
+  @media print {
+    :root { --bg:#fff; }
+    body { background:#fff; font-size:12pt; line-break:strict; }
+    .nb { white-space:nowrap; }
+    .topbar, .more, .article-footer .back { display:none !important; }
+    .wrap { max-width:none; padding:0; }
+    article { padding:0; }
+    h1.title { font-size:20pt; }
+    h2 { font-size:14pt; margin:20pt 0 8pt; break-after:avoid; }
+    a { color:#0b4ea2; }
+    .chain, .more, blockquote, ol.refs li, .appendix pre { break-inside:avoid; }
+    .appendix pre { font-size:9.5pt; }
+    .demo-chip { font-size:9pt; }
+  }
+  @page { size:A4; margin:18mm 16mm; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <span>站点链接助手 · 测试套件 / 场景 02：文章阅读，引用与出处</span>
+    <a href="index.html">← 返回套件首页</a>
+  </div>
+</div>
+
+<article id="article">
+  <div class="wrap">
+    <span class="demo-chip">示例文章 · 用于测试浏览器扩展；情节与数据均为虚构演示</span>
+    <h1 class="title">睡不够，真的更容易感冒吗：一次从论文到数据的核查</h1>
+    <p class="byline">样本观察 · 科普组 ｜ 2026-10-14 ｜ 阅读约 5 分钟</p>
+    <p class="dek">“每天睡不足 6 小时，感冒风险翻倍”——这类说法往往有论文出处，但传着传着就容易走样。与其争论，不如把出处找出来。核查一条健康类说法，通常要走完四步：找到原始论文、读新闻解读、对照中文文献、核对基线数据。</p>
+    <hr class="rule">
+
+    <h2>第一步：找到原始论文</h2>
+    <p>健康类研究检索，一般先从 PubMed 入手，用关键词组合把范围缩小；如果线索里有明确的期刊名，也可以直接到期刊官网核对卷期与作者信息，比如 JAMA、The Lancet，或是一提起来大家都熟的新英格兰医学杂志 <a href="https://www.nejm.org" target="_blank" rel="noopener noreferrer">NEJM</a> 官网。正式发表前就出现过的话题，还应该查一轮预印本：生命科学看 bioRxiv，临床方向看 medRxiv，有时能提前几个月看到原始设计。找不到原始论文时，先别急着下结论——找不到，往往说明这条说法本身就该打问号。</p>
+
+    <h2>第二步：读新闻解读</h2>
+    <p>论文发表后，媒体解读常比论文跑得快。英文世界可以看 Nature 的新闻版块和各大科普媒体的追踪；中文语境里，人民日报等媒体也会有编译报道。把两三家的解读放在一起对照，最容易发现“把相关性说成因果”“把实验条件省略”这类常见偏差。注意：新闻里出现的数字，一律以论文或官方数据为准。</p>
+    <blockquote>
+      “核查不是抬杠，是把每条数字背后的‘谁、何时、怎么测的’补齐。”
+      <footer>—— 一位匿名受访者的形容（示例引语，虚构）</footer>
+    </blockquote>
+
+    <h2>第三步：对照中文文献</h2>
+    <p>中文语境下，可以在中国知网或万方数据检索相关主题的综述与述评，先看学界对同一问题怎么总结；如果只想要免费资源，可以在 DOAJ 里过滤开放获取期刊，或者用 PubScholar、<span class="nb">国家哲学社会科学文献中心</span>这类公益平台碰碰运气。综述的价值在于：它替你汇总了几十篇原始研究，读完再回头看媒体说法，很多夸张之处一眼就能识破。</p>
+
+    <h2>第四步：核对基线数据</h2>
+    <p>“睡眠不足到底有多普遍？”这类背景数据，网上流传的版本大多没有出处。可靠的起点是官方的统计体系：国家统计局会发布全国口径的调查结果，全国时间利用调查里就有睡眠时间指标；需要按地区、年份自己组合查询，就去国家数据把表拉出来。做国际对比时，Our World in Data 和 World Bank Open Data 提供了整理好的跨国数据；涉及健康建议的结论，再对照一下世界卫生组织的主题页面更稳妥。</p>
+
+    <div class="chain">
+      <b>把方法带回家：一条可复用的核查链</b>
+      <ol>
+        <li>PubMed 找到原始论文，期刊官网核对原文；</li>
+        <li>Nature 等新闻源看解读，识别夸张与省略；</li>
+        <li>中国知网、万方数据看中文综述，确认学界共识；</li>
+        <li>国家统计局、国家数据找基线，世界卫生组织看官方建议；</li>
+        <li>每一步都留出处链接，写进笔记，下次引用有据可查。</li>
+      </ol>
+    </div>
+
+    <h2>顺手一试：点击链接自动复制</h2>
+    <p id="autocopy-demo">他在豆瓣搜索《三体》的读者评论，又在知乎回答了"如何入门机器学习"这个问题；中国知网：查找学位论文的好地方，值得常备。</p>
+    <p class="hint" style="font:12.5px/1.7 'Segoe UI','Microsoft YaHei',sans-serif;color:#69707d;margin:0 0 16px;">点一下上面这句话里的站点链接：这一句中的《书名号》、引号或站点名后冒号后的内容会被自动复制，新标签页打开官网后，点搜索框即自动粘贴。不需要可在设置页“点击链接时”里关掉。</p>
+
+    <h2 class="refs-title">参考资料</h2>
+    <ol class="refs">
+      <li>示例论文条目（虚构，仅作演示）· <a href="https://jamanetwork.com" target="_blank" rel="noopener noreferrer">JAMA</a> <span class="src">——期刊官网，用于核对卷期</span></li>
+      <li>文献检索入口 · <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">PubMed</a> <span class="src">——医学文献摘要与全文链接</span></li>
+      <li>预印本示例（虚构）· <a href="https://www.medrxiv.org" target="_blank" rel="noopener noreferrer">medRxiv</a> <span class="src">——临床方向预印本平台</span></li>
+      <li>新闻解读示例（虚构）· <a href="https://www.nature.com" target="_blank" rel="noopener noreferrer">Nature</a> <span class="src">——新闻与观点版块</span></li>
+      <li>中文综述检索入口 · <a href="https://www.cnki.net" target="_blank" rel="noopener noreferrer">中国知网</a> <span class="src">——中文文献数据库</span></li>
+      <li>全国时间利用调查 · <a href="https://www.stats.gov.cn" target="_blank" rel="noopener noreferrer">国家统计局</a> <span class="src">——官方统计口径</span></li>
+      <li>健康主题官方页面 · <a href="https://www.who.int" target="_blank" rel="noopener noreferrer">世界卫生组织</a> <span class="src">——权威健康建议</span></li>
+    </ol>
+
+    <div class="appendix">
+      <h2>附录：引用条目长这样（BibTeX）</h2>
+      <pre><code>@article{demo2026sleep,
+  title   = {Sleep duration and susceptibility to the common cold: a demo entry},
+  author  = {Sample, A. and Sample, B.},
+  journal = {JAMA},
+  year    = {2026},
+  note    = {虚构条目，仅用于演示；检索入口见 PubMed}
+}</code></pre>
+      <p class="hint">提示：代码块里的期刊名与平台名只是纯文本，即使装了扩展也不会被链接——这是有意保留的对照。</p>
+    </div>
+
+    <div class="more">
+      <b>延伸资料</b>
+      <p>点下面的按钮加载更多延伸阅读（模拟“异步加载”的真实页面——新出现的内容同样会被扩展处理）。</p>
+      <button id="load-more" type="button">加载更多资料</button>
+      <div id="more"></div>
+    </div>
+
+    <div class="article-footer">
+      <p>本文为「站点链接助手」测试套件中的示例文章：情节、人物与数据均为虚构，仅用于演示“站点名自动变链接”与“出处可点击核查”的效果；文中链接均指向各平台官网。<a class="back" href="index.html">返回测试套件</a></p>
+    </div>
+  </div>
+</article>
+
+<script>
+  (function () {
+    var n = 0;
+    var pool = [
+      '延伸资料一：Science 的专题解读、Web of Science 的引文追踪报告，以及 arXiv 上同主题的方法论文，都值得顺着看一遍（示例内容）。',
+      '延伸资料二：想自己复现检索过程，可以从 PubMed 的检索历史出发，把检索式保存下来（示例内容）。'
+    ];
+    document.getElementById('load-more').addEventListener('click', function () {
+      var p = document.createElement('p');
+      p.textContent = pool[n % pool.length];
+      document.getElementById('more').appendChild(p);
+      n++;
+      if (n >= pool.length) this.disabled = true;
+    });
+  })();
+</script>
+</body>
+</html>

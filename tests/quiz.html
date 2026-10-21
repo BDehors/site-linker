@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>模拟练习 · 站点链接助手测试套件</title>
+<style>
+  :root { --ink:#1f2329; --muted:#6b7280; --line:#e3e6ea; --blue:#2563eb; --bg:#f6f7f9; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.9 "Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:860px; margin:0 auto; padding:0 22px; }
+  header.top { background:#101828; color:#fff; padding:30px 0 26px; }
+  header.top .bar { display:flex; justify-content:space-between; align-items:center; font-size:13px; color:#9aa4b2; }
+  header.top .bar a { color:#9aa4b2; text-decoration:none; }
+  header.top .bar a:hover { color:#fff; }
+  header.top h1 { margin:14px 0 8px; font-size:23px; }
+  header.top .sub { margin:0; color:#c9d2de; font-size:13.5px; }
+  main { padding:24px 0 10px; }
+  .intro { border:1px solid #bfdbfe; background:#eff6ff; border-radius:10px; padding:13px 17px; margin:0 0 20px; font-size:13.5px; }
+  .intro strong { color:#1d4ed8; }
+  .intro code { background:#fff; border:1px solid #dbeafe; border-radius:4px; padding:0 5px; font-size:12.5px; }
+  .q { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 19px; margin:12px 0; }
+  .q .head { display:flex; justify-content:space-between; gap:10px; }
+  .q .no { color:var(--blue); font-weight:700; }
+  .q .score { color:var(--muted); font-size:12.5px; white-space:nowrap; }
+  .q p.stem { margin:6px 0 4px; }
+  .q details { margin-top:8px; font-size:13.5px; color:#4b5563; border-top:1px dashed var(--line); }
+  .q summary { cursor:pointer; color:var(--blue); user-select:none; font-size:13px; margin-top:8px; }
+  .q details p { margin:8px 0 2px; }
+  .q details ul { margin:4px 0 8px; padding-left:22px; }
+  .q code { background:#f3f4f6; border-radius:4px; padding:0 5px; font-size:12.5px; }
+  h3.sec { font-size:16px; margin:30px 0 10px; padding-left:10px; border-left:4px solid var(--blue); }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:13px 19px; margin:10px 0; }
+  .card .tag { display:inline-block; font-size:12px; color:var(--blue); border:1px solid var(--blue); border-radius:4px; padding:0 6px; margin-bottom:6px; }
+  pre { background:#f3f4f6; border-radius:8px; padding:12px; overflow:auto; font-size:13px; }
+  footer { color:var(--muted); font-size:12.5px; padding:24px 0 40px; }
+  footer .wrap { border-top:1px solid var(--line); padding-top:14px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="bar">
+      <span>站点链接助手 · 测试套件 / 场景 01</span>
+      <a href="index.html">← 返回套件首页</a>
+    </div>
+    <h1>模拟练习：面对题目</h1>
+    <p class="sub">12 道自编检索题（原创内容，与任何考试无关）。做题时遇到站点名，直接点开跳转核查——这就是扩展的用武之地。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <strong>观察点：</strong>每道题的题面和参考答案里都会出现站点名（如“国家统计局”“中国知网”“arXiv”），它们应该全部变成蓝色链接；下面的“对照区”里，不该链接的内容应该保持原样。
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 1 题</span><span class="score">10 分</span></div>
+    <p class="stem">要查询近十年全国的 GDP、人均可支配收入等官方年度数据，应该先打开哪个网站？如果想按指标、地区、时间自己组合查询并下载表格，可以去哪里？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>全国口径的统计公报与年鉴以国家统计局为准；需要按指标、地区、时间自助组合查询并导出数据表时，用国家数据。地方数据则看地方统计机构的官网，例如北京市统计局。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 2 题</span><span class="score">10 分</span></div>
+    <p class="stem">需要用中文检索“数字经济”主题的期刊论文全文，常用的两大中文数据库是？如果想换用另一个以中文科技期刊收录为主的平台，是哪个？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <ul>
+        <li>中国知网、万方数据：收录面最广的两个中文数据库；</li>
+        <li>维普：中文科技期刊收录较全，可作为补充。</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 3 题</span><span class="score">10 分</span></div>
+    <p class="stem">想知道一篇英文论文后来被哪些研究引用了，可以查哪两个引文数据库？如果想要免费的替代方案呢？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>商业引文数据库常用 Web of Science 和 Scopus；免费方案可以用谷歌学术，或开放引文数据平台 OpenAlex。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 4 题</span><span class="score">10 分</span></div>
+    <p class="stem">想追踪人工智能领域的最新预印本，应该去哪里找？如果看的是生物医学或临床方向，对应的预印本平台又是哪些？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>AI、物理、数学等方向看 arXiv；生物医学看 bioRxiv，临床医学看 medRxiv。有的论文在正式发表前，先在预印本平台出现。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 5 题</span><span class="score">10 分</span></div>
+    <p class="stem">查医学、生命科学文献的摘要与正式发表信息，首选哪个数据库？如果要阅读作者公开的免费全文版本呢？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>首选 PubMed；免费全文版本优先到 PubMed Central（PMC）找，那里是开放获取全文库。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 6 题</span><span class="score">10 分</span></div>
+    <p class="stem">想找可以免费下载的开放获取期刊文章，国际平台与国内平台各举一个。</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>国际平台可以用 DOAJ（开放获取期刊目录）；国内可以试试 PubScholar（公益学术平台），它会聚合开放获取资源。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 7 题</span><span class="score">10 分</span></div>
+    <p class="stem">论文写作阶段：文献题录管理和在线协作排版，一般分别用什么工具？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>文献管理常用 Zotero（免费开源），在线协作写作排版常用 Overleaf（在线 LaTeX 编辑器）。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 8 题</span><span class="score">10 分</span></div>
+    <p class="stem">要寻找公开数据集和现成代码，常用的三个平台是？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>代码与项目上 GitHub；数据集与竞赛看 Kaggle；模型、数据集和演示应用可以在 Hugging Face 找。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 9 题</span><span class="score">10 分</span></div>
+    <p class="stem">学校图书馆没有馆藏的图书或期刊文献，可以通过哪些国家级平台申请馆际互借与文献传递？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>可以在国家图书馆申请读者卡并使用文献传递；科研用户常用 NSTL（国家科技图书文献中心）；高校用户还可以通过 CALIS（中国高等教育文献保障系统）走馆际互借。</p>
+    </details>
+  </div>
+
+  <div class="q">
+    <div class="head"><span class="no">第 10 题</span><span class="score">10 分</span></div>
+    <p class="stem">要查一项国家标准的全文、或者某部法律条文的原文，分别应该去哪个网站？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>国家标准看国家标准全文公开系统；法律法规原文查国家法律法规数据库。</p>
+    </details>
+  </div>
+
+  <div class="q" id="q11">
+    <div class="head"><span class="no">第 11 题</span><span class="score">10 分</span></div>
+    <p class="stem">在 CNKI（中国知网）的高级检索里，要查 2015-2025 年主题为“数字经济”与“税收”的文献，主题条件应该怎么填？想按发文量找这一方向的高产作者，用什么功能？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <p>高级检索里设置两个主题条件，分别填“数字经济”和“税收”，发表时间限定 2015-2025，再用“结果分析”里的作者统计看发文量排序。顺手一试：点题面里的“中国知网”链接，“数字经济”与“税收”两个词会一起被复制，官网打开后直接粘进检索框，删掉不要的词就行。</p>
+    </details>
+  </div>
+
+  <div class="q" id="q12">
+    <div class="head"><span class="no">第 12 题</span><span class="score">10 分</span></div>
+    <p class="stem">查国家图书馆在线发布的古籍影像、民国时期的图书期刊报纸，分别进哪个资源库？查证券从业人员与机构的公示信息、国内药品注册与生产企业数据，又分别用哪个官方查询系统？</p>
+    <details>
+      <summary>参考答案与核查思路</summary>
+      <ul>
+        <li>古籍影像：中华古籍资源库（http://read.nlc.cn/thematDataSearch/toGujiIndex），国图在线发布，免登录阅览全文影像；</li>
+        <li>民国文献：民国时期文献库（http://read.nlc.cn/specialResource/minguoindex），含民国图书、法律、期刊、报纸四个子库；</li>
+        <li>证券公示：中国证券业协会查询系统（https://gs.sac.net.cn），查从业人员与机构的公示信息；</li>
+        <li>药品数据：国家药品监督管理局数据查询（https://datasearch.nmpa.gov.cn），药品、医疗器械、化妆品的注册备案与生产企业数据。</li>
+      </ul>
+    </details>
+  </div>
+
+  <h3 class="sec">对照区：这些不该被链接</h3>
+
+  <div class="card">
+    <span class="tag">误报屏蔽</span>
+    <p>万方科技是一家独立公司名，与万方数据没有关系；“万方科技”四个字不应变成链接。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">长词优先</span>
+    <p>国家统计局发布全国数据；地方数据可以看北京市统计局。请注意：这两处都应该作为完整的机构名变成链接，而不是被拆成更短的片段。</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">代码块不处理</span>
+    <pre><code>检索式示例（直接粘贴到检索框）
+[主题] = 数字素养 AND [来源] = 中国知网 OR arXiv
+# 代码块里的“中国知网”“arXiv”不应变成链接</code></pre>
+  </div>
+
+  <div class="card">
+    <span class="tag">已有链接不重复处理</span>
+    <p>这句话里有一个手工写的链接：<a href="https://www.cnki.net" target="_blank" rel="noopener noreferrer">中国知网官网</a>，它已经是链接，扩展不会改动它，也不会嵌套出第二层链接。</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    本页题目为测试用原创内容，仅用于验证“站点链接助手”的链接化效果。 · <a href="index.html">返回测试套件</a>
+  </div>
+</footer>
+</body>
+</html>

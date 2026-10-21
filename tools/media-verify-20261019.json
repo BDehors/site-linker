@@ -1,0 +1,1658 @@
+{
+ "generatedAt": "2026-10-19",
+ "source": "网信办《2025 版互联网新闻信息稿源单位名单》 https://www.cac.gov.cn/2025-08/14/c_1756886951643180.htm (PDF: /rootimages/uploadimg/1756886952378281/1756886952378281.pdf)",
+ "method": "候选域名逐个 HTTPS 取首页 title/og:site_name，标题含该媒体专名才算已核实；编码按 HTTP charset→meta charset→utf-8→gb18030 依次试",
+ "verifiedCount": 97,
+ "unresolvedCount": 46,
+ "verified": [
+  {
+   "name": "人民网",
+   "domain": "www.people.com.cn",
+   "evidence": "title=人民网_网上的人民日报 | keywords=人民网,人民日报,中国共产党新闻,新闻中心,时政,社会,地方,地方领导,经济,能源环保,跨国公司,新农村,教育,科技,文化,饮食,娱乐,旅游,游戏,短信,彩信,",
+   "tokens": [
+    "人民网"
+   ],
+   "trace": [
+    "www.people.com.cn -> 200 [UTF-8] title=人民网_网上的人民日报 | keywords=人民网,人民日报,中国共产党新闻,新闻中心,时政,社会,地方,地方领导,经济,能源环保,跨国公司,新农村,教育,科技,文化,饮食,娱乐,旅游,游戏,短信,彩信,"
+   ]
+  },
+  {
+   "name": "新华网",
+   "domain": "www.news.cn",
+   "evidence": "title=新华网_让新闻离你更近 | keywords=新闻中心,时政,人事任免,国际,地方,香港,台湾,澳门,华人,军事,图片,财经,政权,股票,房产,汽车,体育,奥运,法治,廉政,社会,科技,互联网,教育,文娱,",
+   "tokens": [
+    "新华网",
+    "新华社"
+   ],
+   "trace": [
+    "www.news.cn -> 200 [utf-8] title=新华网_让新闻离你更近 | keywords=新闻中心,时政,人事任免,国际,地方,香港,台湾,澳门,华人,军事,图片,财经,政权,股票,房产,汽车,体育,奥运,法治,廉政,社会,科技,互联网,教育,文娱,"
+   ]
+  },
+  {
+   "name": "央视网",
+   "domain": "www.cctv.com",
+   "evidence": "title=央视网_世界就在眼前 | keywords=央视网 中央广播电视总台 央视 CCTV CCTV.com 央视影音 新闻 体育 熊猫  CCTV1新闻联播 领导人视频 央视快评 小央视频",
+   "tokens": [
+    "央视网"
+   ],
+   "trace": [
+    "www.cctv.com -> 200 [utf-8] title=央视网_世界就在眼前 | keywords=央视网 中央广播电视总台 央视 CCTV CCTV.com 央视影音 新闻 体育 熊猫  CCTV1新闻联播 领导人视频 央视快评 小央视频"
+   ]
+  },
+  {
+   "name": "中国网",
+   "domain": "www.china.com.cn",
+   "evidence": "title=中国网--网上中国",
+   "tokens": [
+    "中国网"
+   ],
+   "trace": [
+    "www.china.com.cn -> 200 [utf-8] title=中国网--网上中国"
+   ]
+  },
+  {
+   "name": "国际在线",
+   "domain": "www.cri.cn",
+   "evidence": "title=国际在线_读懂国际 点赞中国 | keywords=国际在线,中央广播电视总台,新闻,时政,国际新闻,国内新闻,评论,一带一路,城市,外宣,企业,文娱,视频,环球,经济,直播,访谈,观点,传媒,电影,电视,资讯",
+   "tokens": [
+    "国际在线",
+    "CRI"
+   ],
+   "trace": [
+    "www.cri.cn -> 200 [utf-8] title=国际在线_读懂国际 点赞中国 | keywords=国际在线,中央广播电视总台,新闻,时政,国际新闻,国内新闻,评论,一带一路,城市,外宣,企业,文娱,视频,环球,经济,直播,访谈,观点,传媒,电影,电视,资讯"
+   ]
+  },
+  {
+   "name": "中国日报网",
+   "domain": "www.chinadaily.com.cn",
+   "evidence": "title=China Daily Website - Connecting China Connecting the World",
+   "tokens": [
+    "中国日报",
+    "China Daily"
+   ],
+   "trace": [
+    "www.chinadaily.com.cn -> 200 [utf-8] title=China Daily Website - Connecting China Connecting the World"
+   ]
+  },
+  {
+   "name": "中国青年网",
+   "domain": "www.youth.cn",
+   "evidence": "title=中国青年网_青年温度、青春靓度、青网态度 | keywords=中国青年网,青年网,youth,cycnet,新闻中心,时政,国际,地方,香港,台湾,澳门,华人,军事,图片,财经,政权,汽车,体育,奥运,法治,廉政,社会,科",
+   "tokens": [
+    "中国青年网"
+   ],
+   "trace": [
+    "www.youth.cn -> 200 [gb2312] title=中国青年网_青年温度、青春靓度、青网态度 | keywords=中国青年网,青年网,youth,cycnet,新闻中心,时政,国际,地方,香港,台湾,澳门,华人,军事,图片,财经,政权,汽车,体育,奥运,法治,廉政,社会,科"
+   ]
+  },
+  {
+   "name": "中国经济网",
+   "domain": "www.ce.cn",
+   "evidence": "title=中国经济网——国家经济门户 | keywords=新闻中心,地方经济,财经,股票,基金,产业,食品安全,房产,汽车,数码,国际经济,宏观经济,经济数据,时尚,娱乐,音乐,科技,教育,漫画,图书,论坛,博客,视频",
+   "tokens": [
+    "中国经济网"
+   ],
+   "trace": [
+    "www.ce.cn -> 200 [utf-8] title=中国经济网——国家经济门户 | keywords=新闻中心,地方经济,财经,股票,基金,产业,食品安全,房产,汽车,数码,国际经济,宏观经济,经济数据,时尚,娱乐,音乐,科技,教育,漫画,图书,论坛,博客,视频"
+   ]
+  },
+  {
+   "name": "中国台湾网",
+   "domain": "www.taiwan.cn",
+   "evidence": "title=中国台湾网 | keywords=台湾新闻,台湾时政,国台办,时事评论,族谱,台生,台商,ECFA,台湾娱乐,两岸经贸,投资台湾,台湾旅游,赴台个人游,统一,“台独”,两岸农业,两岸互联网,两岸",
+   "tokens": [
+    "中国台湾网"
+   ],
+   "trace": [
+    "www.taiwan.cn -> 200 [gb2312] title=中国台湾网 | keywords=台湾新闻,台湾时政,国台办,时事评论,族谱,台生,台商,ECFA,台湾娱乐,两岸经贸,投资台湾,台湾旅游,赴台个人游,统一,“台独”,两岸农业,两岸互联网,两岸"
+   ]
+  },
+  {
+   "name": "中国西藏网",
+   "domain": "www.tibet.cn",
+   "evidence": "title=中国西藏网 | keywords=中国西藏,西藏网,西藏新闻,西藏旅游,西藏影视,援藏,藏传佛教,宗教,教育,财经,秘闻,文化,图片,观察,时政,社会,民生,医疗,拉萨,布达拉宫,纳木错,雪顿节",
+   "tokens": [
+    "中国西藏网"
+   ],
+   "trace": [
+    "www.tibet.cn -> 200 [utf-8] title=中国西藏网 | keywords=中国西藏,西藏网,西藏新闻,西藏旅游,西藏影视,援藏,藏传佛教,宗教,教育,财经,秘闻,文化,图片,观察,时政,社会,民生,医疗,拉萨,布达拉宫,纳木错,雪顿节"
+   ]
+  },
+  {
+   "name": "光明网",
+   "domain": "www.gmw.cn",
+   "evidence": "title=光明网_新闻视野、文化视角、思想深度、理论高度 | og:site_name=光明网 | keywords=光明网,光明日报,时政,评论,理论,思想,学术,党建,经济,科技,教育,文化,娱乐,书画,旅游,摄影,卫生,法治,军事,体育,能源,汽车,电视,视频,访谈,传媒",
+   "tokens": [
+    "光明网"
+   ],
+   "trace": [
+    "www.gmw.cn -> 200 [utf-8] title=光明网_新闻视野、文化视角、思想深度、理论高度 | og:site_name=光明网 | keywords=光明网,光明日报,时政,评论,理论,思想,学术,党建,经济,科技,教育,文化,娱乐,书画,旅游,摄影,卫生,法治,军事,体育,能源,汽车,电视,视频,访谈,传媒"
+   ]
+  },
+  {
+   "name": "央广网",
+   "domain": "www.cnr.cn",
+   "evidence": "title=央广网·中央广播电视总台 | keywords=时政,新闻,耳闻,眼见,地标中国,财经,科技,消费,健康,中华名医号,教育,文旅,军事,汽车,房产,公益,民生",
+   "tokens": [
+    "央广网",
+    "中央人民广播电台"
+   ],
+   "trace": [
+    "www.cnr.cn -> 200 [gb2312] title=央广网·中央广播电视总台 | keywords=时政,新闻,耳闻,眼见,地标中国,财经,科技,消费,健康,中华名医号,教育,文旅,军事,汽车,房产,公益,民生"
+   ]
+  },
+  {
+   "name": "中国军网",
+   "domain": "www.81.cn",
+   "evidence": "title=中国军网 - 中国人民解放军官方军事新闻门户 | keywords=军事,国防,解放军,军队,军人,部队,军委,军校,护航,国防生,女兵,军事图片,军医",
+   "tokens": [
+    "中国军网"
+   ],
+   "trace": [
+    "www.81.cn -> 200 [utf-8] title=中国军网 - 中国人民解放军官方军事新闻门户 | keywords=军事,国防,解放军,军队,军人,部队,军委,军校,护航,国防生,女兵,军事图片,军医"
+   ]
+  },
+  {
+   "name": "中国新闻网",
+   "domain": "www.chinanews.com.cn",
+   "evidence": "title=中国新闻网_梳理天下新闻 | keywords=中国新闻网,中新网,新闻,时事,时政,国际,国内,社会,法治,聚焦,评论,文化,教育,新视点,深度,网评,专题,环球,传播,论坛,图片,军事,焦点,排行,环保,",
+   "tokens": [
+    "中国新闻网",
+    "中新网"
+   ],
+   "trace": [
+    "www.chinanews.com.cn -> 200 [UTF-8] title=中国新闻网_梳理天下新闻 | keywords=中国新闻网,中新网,新闻,时事,时政,国际,国内,社会,法治,聚焦,评论,文化,教育,新视点,深度,网评,专题,环球,传播,论坛,图片,军事,焦点,排行,环保,"
+   ]
+  },
+  {
+   "name": "人民政协网",
+   "domain": "www.rmzxb.com.cn",
+   "evidence": "title=人民政协网 | keywords=人民,政协,人民政协,政协网,人民政协网,政协报,人民政协报,人民政协报社,中国政协,全国政协,政协委员,全国政协委员,地方政协委员,省政协委员,市政协委员,县",
+   "tokens": [
+    "人民政协"
+   ],
+   "trace": [
+    "www.rmzxb.com.cn -> 200 [utf-8] title=人民政协网 | keywords=人民,政协,人民政协,政协网,人民政协网,政协报,人民政协报,人民政协报社,中国政协,全国政协,政协委员,全国政协委员,地方政协委员,省政协委员,市政协委员,县"
+   ]
+  },
+  {
+   "name": "中青在线",
+   "domain": "www.cyol.com",
+   "evidence": "title=中青在线",
+   "tokens": [
+    "中青在线",
+    "中国青年报"
+   ],
+   "trace": [
+    "www.cyol.com -> 200 [UTF-8] title=中青在线"
+   ]
+  },
+  {
+   "name": "中工网",
+   "domain": "www.workercn.cn",
+   "evidence": "title=中工网_亿万职工的网上家园 | keywords=中工网,中国工会新闻网,工人日报,工会,工厂,工人,企业,劳动关系,时政,视频,网评,财经,投资,理财,民生,就业,国际,理论,军事,打工,工伤,维权,职教,汽",
+   "tokens": [
+    "中工网"
+   ],
+   "trace": [
+    "www.workercn.cn -> 200 [utf-8] title=中工网_亿万职工的网上家园 | keywords=中工网,中国工会新闻网,工人日报,工会,工厂,工人,企业,劳动关系,时政,视频,网评,财经,投资,理财,民生,就业,国际,理论,军事,打工,工伤,维权,职教,汽"
+   ]
+  },
+  {
+   "name": "未来网",
+   "domain": "www.k618.cn",
+   "evidence": "title=未来网 | keywords=未来网,中央新闻网站,少先队工作平台,教育资讯,未成年,团中央,共青团,未来网新闻,未来网资讯",
+   "tokens": [
+    "未来网"
+   ],
+   "trace": [
+    "www.k618.cn -> 200 [utf-8] title=未来网 | keywords=未来网,中央新闻网站,少先队工作平台,教育资讯,未成年,团中央,共青团,未来网新闻,未来网资讯"
+   ]
+  },
+  {
+   "name": "正义网",
+   "domain": "www.jcrb.com",
+   "evidence": "title=正义网",
+   "tokens": [
+    "正义网"
+   ],
+   "trace": [
+    "www.jcrb.com -> 200 [utf-8] title=正义网"
+   ]
+  },
+  {
+   "name": "中国搜索",
+   "domain": "www.chinaso.com",
+   "evidence": "title=中国搜索-国家权威搜索引擎 | keywords=搜索,中国搜索,搜索引擎,新闻搜索,图片搜索,视频搜索,青少年搜索,区块链搜索,app搜索,好故事搜索,游戏搜索,国家权威搜索引擎,新闻,推荐,信息,时政,人事",
+   "tokens": [
+    "中国搜索"
+   ],
+   "trace": [
+    "www.chinaso.com -> 200 [utf-8] title=中国搜索-国家权威搜索引擎 | keywords=搜索,中国搜索,搜索引擎,新闻搜索,图片搜索,视频搜索,青少年搜索,区块链搜索,app搜索,好故事搜索,游戏搜索,国家权威搜索引擎,新闻,推荐,信息,时政,人事"
+   ]
+  },
+  {
+   "name": "中国文明网",
+   "domain": "www.wenming.cn",
+   "evidence": "title=中国文明网",
+   "tokens": [
+    "中国文明网"
+   ],
+   "trace": [
+    "www.wenming.cn -> 200 [utf-8] title=中国文明网"
+   ]
+  },
+  {
+   "name": "学习强国",
+   "domain": "www.xuexi.cn",
+   "evidence": "title=学习强国",
+   "tokens": [
+    "学习强国"
+   ],
+   "trace": [
+    "www.xuexi.cn -> 200 [utf-8] title=学习强国"
+   ]
+  },
+  {
+   "name": "求是网",
+   "domain": "www.qstheory.cn",
+   "evidence": "title=求是网 - 思想建党 理论强党 | keywords=求是网,求是,红旗,求是杂志,红旗文稿,红旗文摘,理论网,qstheory,党刊,红旗,导读,原创精选,中国共产党,中国特色社会主义理论体系,理论学习,群众路线",
+   "tokens": [
+    "求是",
+    "红旗文稿"
+   ],
+   "trace": [
+    "www.qstheory.cn -> 200 [utf-8] title=求是网 - 思想建党 理论强党 | keywords=求是网,求是,红旗,求是杂志,红旗文稿,红旗文摘,理论网,qstheory,党刊,红旗,导读,原创精选,中国共产党,中国特色社会主义理论体系,理论学习,群众路线"
+   ]
+  },
+  {
+   "name": "中国社会科学网",
+   "domain": "www.cssn.cn",
+   "evidence": "title=中国社会科学网_繁荣中国学术 发展中国理论 传播中国思想",
+   "tokens": [
+    "中国社会科学网",
+    "社会科学报"
+   ],
+   "trace": [
+    "www.cssn.cn -> 200 [UTF-8] title=中国社会科学网_繁荣中国学术 发展中国理论 传播中国思想"
+   ]
+  },
+  {
+   "name": "党建网",
+   "domain": "www.dangjian.cn",
+   "evidence": "title=党建网 - 中宣部主管全国性党建网站 | keywords=党建网由中共中央宣传部主管，党建杂志社主办，是经中央网信办批准可供其他网站转载内容的全国重点理论网站，是具有新闻采编发布、视频播放资质的全国党建工作门户网站。",
+   "tokens": [
+    "党建网",
+    "党建"
+   ],
+   "trace": [
+    "www.dangjian.cn -> 200 [UTF-8] title=党建网 - 中宣部主管全国性党建网站 | keywords=党建网由中共中央宣传部主管，党建杂志社主办，是经中央网信办批准可供其他网站转载内容的全国重点理论网站，是具有新闻采编发布、视频播放资质的全国党建工作门户网站。"
+   ]
+  },
+  {
+   "name": "旗帜网",
+   "domain": "www.qizhiwang.org.cn",
+   "evidence": "title=旗帜网",
+   "tokens": [
+    "旗帜网",
+    "旗帜"
+   ],
+   "trace": [
+    "www.qizhiwang.org.cn -> 200 [UTF-8] title=旗帜网"
+   ]
+  },
+  {
+   "name": "人民论坛网",
+   "domain": "www.rmlt.com.cn",
+   "evidence": "title=人民论坛网_中央重点理论网站_人民日报社主管 | keywords=人民论坛网,人民论坛,人民论坛杂志社官方网站,人民论坛投稿,人民论坛官方网站,人民论坛编辑部",
+   "tokens": [
+    "人民论坛"
+   ],
+   "trace": [
+    "www.rmlt.com.cn -> 200 [utf-8] title=人民论坛网_中央重点理论网站_人民日报社主管 | keywords=人民论坛网,人民论坛,人民论坛杂志社官方网站,人民论坛投稿,人民论坛官方网站,人民论坛编辑部"
+   ]
+  },
+  {
+   "name": "参考消息网",
+   "domain": "www.cankaoxiaoxi.com",
+   "evidence": "title=参考消息",
+   "tokens": [
+    "参考消息"
+   ],
+   "trace": [
+    "www.cankaoxiaoxi.com -> 200 [utf-8] title=参考消息"
+   ]
+  },
+  {
+   "name": "环球时报",
+   "domain": "www.globaltimes.cn",
+   "evidence": "title=Global Times | keywords=China news, China daily news, Global Times, globaltimes, huanqiu shibao, huan qi",
+   "tokens": [
+    "环球时报",
+    "Global Times"
+   ],
+   "trace": [
+    "www.globaltimes.cn -> 200 [utf-8] title=Global Times | keywords=China news, China daily news, Global Times, globaltimes, huanqiu shibao, huan qi"
+   ]
+  },
+  {
+   "name": "证券时报网",
+   "domain": "www.stcn.com",
+   "evidence": "title=证券时报官方网站-中国资本市场信息披露平台 | keywords=证券时报,证券时报网,证券时报快讯,时报快讯,证券时报电子版,信息披露,资本市场信息披露平台,今日股市,股市最新消息新闻,中国股市,实时股市",
+   "tokens": [
+    "证券时报"
+   ],
+   "trace": [
+    "www.stcn.com -> 200 [utf-8] title=证券时报官方网站-中国资本市场信息披露平台 | keywords=证券时报,证券时报网,证券时报快讯,时报快讯,证券时报电子版,信息披露,资本市场信息披露平台,今日股市,股市最新消息新闻,中国股市,实时股市"
+   ]
+  },
+  {
+   "name": "经济网",
+   "domain": "www.ceweekly.cn",
+   "evidence": "title=经济网_人民日报中国经济周刊官方网站_国家一类新闻网站 | keywords=经济网,中国经济周刊,城市,环保,公司,名人,能源,航天,企业,股市,基金,证券,投资,期货,信用,公益,社会,房产,科技,教育,旅游,理财,互联网,法治,国际",
+   "tokens": [
+    "经济网",
+    "中国经济周刊"
+   ],
+   "trace": [
+    "www.ceweekly.cn -> 200 [UTF-8] title=经济网_人民日报中国经济周刊官方网站_国家一类新闻网站 | keywords=经济网,中国经济周刊,城市,环保,公司,名人,能源,航天,企业,股市,基金,证券,投资,期货,信用,公益,社会,房产,科技,教育,旅游,理财,互联网,法治,国际"
+   ]
+  },
+  {
+   "name": "中国证券网",
+   "domain": "www.cnstock.com",
+   "evidence": "title=上海证券报·中国证券网-权威 价值 专业-www.cnstock.com/",
+   "tokens": [
+    "中国证券网",
+    "上海证券报"
+   ],
+   "trace": [
+    "www.cnstock.com -> 200 [utf-8] title=上海证券报·中国证券网-权威 价值 专业-www.cnstock.com/"
+   ]
+  },
+  {
+   "name": "中证网",
+   "domain": "www.cs.com.cn",
+   "evidence": "title=中证网 - 中国权威的证券财经资讯网站 | keywords=证券,财经,经济,金融,时事,产业,民生,调查,聚焦,专题,时政,国内新闻,国际新闻,财经新闻,中证新闻,投教,投资者教育,中证,中国证券",
+   "tokens": [
+    "中证网",
+    "中国证券报"
+   ],
+   "trace": [
+    "www.cs.com.cn -> 200 [utf-8] title=中证网 - 中国权威的证券财经资讯网站 | keywords=证券,财经,经济,金融,时事,产业,民生,调查,聚焦,专题,时政,国内新闻,国际新闻,财经新闻,中证新闻,投教,投资者教育,中证,中国证券"
+   ]
+  },
+  {
+   "name": "中国财富网",
+   "domain": "www.cfbond.com",
+   "evidence": "title=中国财富网--中国财富传媒集团金融信息综合服务平台 | keywords=财富,中国财富,财富网,资本市场,金融信息,财经,银行,保险,债券,股市,科创板,宏观,投资者教育,视频,财商,财富超市,金眼大数据,可视化财报",
+   "tokens": [
+    "中国财富"
+   ],
+   "trace": [
+    "www.cfbond.com -> 200 [UTF-8] title=中国财富网--中国财富传媒集团金融信息综合服务平台 | keywords=财富,中国财富,财富网,资本市场,金融信息,财经,银行,保险,债券,股市,科创板,宏观,投资者教育,视频,财商,财富超市,金眼大数据,可视化财报"
+   ]
+  },
+  {
+   "name": "中国科技网",
+   "domain": "www.stdaily.com",
+   "evidence": "title=中国科技网 | keywords=中国科技网,科技日报,科技,科技网,科普,科幻,资讯",
+   "tokens": [
+    "中国科技网",
+    "科技日报"
+   ],
+   "trace": [
+    "www.stdaily.com -> 200 [utf-8] title=中国科技网 | keywords=中国科技网,科技日报,科技,科技网,科普,科幻,资讯"
+   ]
+  },
+  {
+   "name": "中国侨网",
+   "domain": "www.chinaqw.com",
+   "evidence": "title=中国侨网 | keywords=新闻,侨网,华侨,华人,华裔,侨胞,海外,留学,华文教育,侨乡,侨办,侨联,签证,护照",
+   "tokens": [
+    "中国侨网"
+   ],
+   "trace": [
+    "www.chinaqw.com -> 200 [UTF-8] title=中国侨网 | keywords=新闻,侨网,华侨,华人,华裔,侨胞,海外,留学,华文教育,侨乡,侨办,侨联,签证,护照"
+   ]
+  },
+  {
+   "name": "中国新闻周刊",
+   "domain": "www.inewsweek.cn",
+   "evidence": "title=中国新闻周刊 | keywords=中国新闻周刊网",
+   "tokens": [
+    "中国新闻周刊",
+    "新闻周刊"
+   ],
+   "trace": [
+    "www.inewsweek.cn -> 200 [gb2312] title=中国新闻周刊 | keywords=中国新闻周刊网"
+   ]
+  },
+  {
+   "name": "中新经纬",
+   "domain": "www.jwview.com",
+   "evidence": "title=中新经纬 | keywords=经纬,财经,中新社,中新,股票,基金,期货,理财,行情,金融,债券,外汇,保险,银行,产经,房产,科技,汽车,直播,V言,专家,外参,快报,直播",
+   "tokens": [
+    "中新经纬"
+   ],
+   "trace": [
+    "www.jwview.com -> 200 [gb2312] title=中新经纬 | keywords=经纬,财经,中新社,中新,股票,基金,期货,理财,行情,金融,债券,外汇,保险,银行,产经,房产,科技,汽车,直播,V言,专家,外参,快报,直播"
+   ]
+  },
+  {
+   "name": "人民周刊网",
+   "domain": "www.peopleweekly.cn",
+   "evidence": "title=人民周刊网—主流舆论融合传播平台 | keywords=人民新闻网,人民新闻,人民周刊,人民日报,新闻,人民",
+   "tokens": [
+    "人民周刊"
+   ],
+   "trace": [
+    "www.peopleweekly.cn -> 200 [utf-8] title=人民周刊网—主流舆论融合传播平台 | keywords=人民新闻网,人民新闻,人民周刊,人民日报,新闻,人民"
+   ]
+  },
+  {
+   "name": "民生网",
+   "domain": "www.msweekly.com",
+   "evidence": "title=民生网——人民日报社《民生周刊》杂志官网 | keywords=人民日报全媒体平台,人民日报民生周刊",
+   "tokens": [
+    "民生周刊",
+    "民生网"
+   ],
+   "trace": [
+    "www.msweekly.com -> 200 [utf-8] title=民生网——人民日报社《民生周刊》杂志官网 | keywords=人民日报全媒体平台,人民日报民生周刊"
+   ]
+  },
+  {
+   "name": "中国工信新闻网",
+   "domain": "www.cnii.com.cn",
+   "evidence": "title=中国工信新闻网",
+   "tokens": [
+    "中国工信新闻网",
+    "工信"
+   ],
+   "trace": [
+    "www.cnii.com.cn -> 200 [UTF-8] title=中国工信新闻网"
+   ]
+  },
+  {
+   "name": "健康报网",
+   "domain": "www.jkb.com.cn",
+   "evidence": "title=健康报网――健康门户 | keywords=健康，健康知识，健康小常识，健康生活，寻医问药，养生，医改，医疗，中医中药，医院，药品，疾病，保健，心理，减肥，美容，护肤。",
+   "tokens": [
+    "健康报"
+   ],
+   "trace": [
+    "www.jkb.com.cn -> 200 [UTF-8] title=健康报网――健康门户 | keywords=健康，健康知识，健康小常识，健康生活，寻医问药，养生，医改，医疗，中医中药，医院，药品，疾病，保健，心理，减肥，美容，护肤。"
+   ]
+  },
+  {
+   "name": "中国能源网",
+   "domain": "www.china5e.com",
+   "evidence": "title=中国能源网 | keywords=中国能源网,能源分析,能源数据,能源资料库,能源研究,页岩气,分布式能源",
+   "tokens": [
+    "中国能源网",
+    "中国能源报"
+   ],
+   "trace": [
+    "www.china5e.com -> 200 [utf-8] title=中国能源网 | keywords=中国能源网,能源分析,能源数据,能源资料库,能源研究,页岩气,分布式能源"
+   ]
+  },
+  {
+   "name": "中国水利网",
+   "domain": "www.chinawater.com.cn",
+   "evidence": "title=欢迎访问中国水利网站",
+   "tokens": [
+    "中国水利网",
+    "中国水利报"
+   ],
+   "trace": [
+    "www.chinawater.com.cn -> 200 [UTF-8] title=欢迎访问中国水利网站"
+   ]
+  },
+  {
+   "name": "中国质量新闻网",
+   "domain": "www.cqn.com.cn",
+   "evidence": "title=中国质量新闻网（中国质检网） | keywords=中国质量新闻网,质量,监督,投诉,维权,消费,财经,文化,要闻",
+   "tokens": [
+    "中国质量新闻网",
+    "中国质量报"
+   ],
+   "trace": [
+    "www.cqn.com.cn -> 200 [utf-8] title=中国质量新闻网（中国质检网） | keywords=中国质量新闻网,质量,监督,投诉,维权,消费,财经,文化,要闻"
+   ]
+  },
+  {
+   "name": "华夏时报网",
+   "domain": "www.chinatimes.net.cn",
+   "evidence": "title=华夏时报网_人道·公益·民生 | keywords=人道,公益,民生,财经,新媒体,资讯",
+   "tokens": [
+    "华夏时报"
+   ],
+   "trace": [
+    "www.chinatimes.net.cn -> 200 [utf-8] title=华夏时报网_人道·公益·民生 | keywords=人道,公益,民生,财经,新媒体,资讯"
+   ]
+  },
+  {
+   "name": "中宏网",
+   "domain": "www.zhonghongwang.com",
+   "evidence": "title=中宏网-今日资讯-财经新闻 | keywords=中宏网,今日新闻,中央新闻网站,国家发改委,发改政策,政策解读,民生,营商环境,财经,信用,新质生产力,地方发展,视频新闻,短视频,新闻发布会,直播",
+   "tokens": [
+    "中宏网",
+    "中宏"
+   ],
+   "trace": [
+    "www.zhonghongwang.com -> 200 [UTF-8] title=中宏网-今日资讯-财经新闻 | keywords=中宏网,今日新闻,中央新闻网站,国家发改委,发改政策,政策解读,民生,营商环境,财经,信用,新质生产力,地方发展,视频新闻,短视频,新闻发布会,直播"
+   ]
+  },
+  {
+   "name": "北京周报",
+   "domain": "www.bjreview.com",
+   "evidence": "title=Beijing Review | keywords=Arts & culture,Review,Business,Market watch,Forum,CIPG,Expat’s eye,Foreign relat",
+   "tokens": [
+    "北京周报",
+    "Beijing Review"
+   ],
+   "trace": [
+    "www.bjreview.com -> 200 [utf-8] title=Beijing Review | keywords=Arts & culture,Review,Business,Market watch,Forum,CIPG,Expat’s eye,Foreign relat"
+   ]
+  },
+  {
+   "name": "中国法院网",
+   "domain": "www.chinacourt.org",
+   "evidence": "title=中国法院网 | keywords=法治，法律，司法，法院，律师，法学院，学术，案件，审判，法制媒体，法治新闻，人民法院报，最高人民法院，法院网，中国法院网，全国法院门户网站",
+   "tokens": [
+    "中国法院网",
+    "人民法院报"
+   ],
+   "trace": [
+    "www.chinacourt.org -> 200 [utf-8] title=中国法院网 | keywords=法治，法律，司法，法院，律师，法学院，学术，案件，审判，法制媒体，法治新闻，人民法院报，最高人民法院，法院网，中国法院网，全国法院门户网站"
+   ]
+  },
+  {
+   "name": "科普中国网",
+   "domain": "www.kepuchina.cn",
+   "evidence": "title=科普中国网_让科技知识在网上和生活中流行，中国科学技术出版社有限公司 | keywords=科普中国,科普超市,健康科普,科学头条,前沿科技,真相揭秘,科普动漫,科普阅读,人工智能,科技场馆,军事科技,虚拟体验,科技名家,母婴,生物,数码,能源,发明,",
+   "tokens": [
+    "科普中国"
+   ],
+   "trace": [
+    "www.kepuchina.cn -> 200 [utf-8] title=科普中国网_让科技知识在网上和生活中流行，中国科学技术出版社有限公司 | keywords=科普中国,科普超市,健康科普,科学头条,前沿科技,真相揭秘,科普动漫,科普阅读,人工智能,科技场馆,军事科技,虚拟体验,科技名家,母婴,生物,数码,能源,发明,"
+   ]
+  },
+  {
+   "name": "中国文艺网",
+   "domain": "www.cflac.org.cn",
+   "evidence": "title=中国文艺网—中国文学艺术界联合会",
+   "tokens": [
+    "中国文艺网"
+   ],
+   "trace": [
+    "www.cflac.org.cn -> 200 [utf-8] title=中国文艺网—中国文学艺术界联合会"
+   ]
+  },
+  {
+   "name": "中国人权网",
+   "domain": "www.humanrights.cn",
+   "evidence": "title=中国人权网_权威发布中国人权信息 | keywords=中国人权网,人权网,中国人权研究会,人权新闻,人权动态,人权理论,人权交流,人权对话,人权故事,人权基地,人权机构,人权报告,人权文件,人权白皮书,人权研究,人",
+   "tokens": [
+    "中国人权网"
+   ],
+   "trace": [
+    "www.humanrights.cn -> 200 [UTF-8] title=中国人权网_权威发布中国人权信息 | keywords=中国人权网,人权网,中国人权研究会,人权新闻,人权动态,人权理论,人权交流,人权对话,人权故事,人权基地,人权机构,人权报告,人权文件,人权白皮书,人权研究,人"
+   ]
+  },
+  {
+   "name": "中国食品安全网",
+   "domain": "www.cfsn.cn",
+   "evidence": "title=中国食品安全网 | keywords=食品,食品安全,中国食品安全网,中国食品安全报,食育,食品安全知识,食品安全管理制度,食品安全问题,食品营养,食品科学",
+   "tokens": [
+    "中国食品安全",
+    "食品安全报"
+   ],
+   "trace": [
+    "www.cfsn.cn -> 200 [utf-8] title=中国食品安全网 | keywords=食品,食品安全,中国食品安全网,中国食品安全报,食育,食品安全知识,食品安全管理制度,食品安全问题,食品营养,食品科学"
+   ]
+  },
+  {
+   "name": "中国商报网",
+   "domain": "www.zgswcn.com",
+   "evidence": "title=中国商报网",
+   "tokens": [
+    "中国商报"
+   ],
+   "trace": [
+    "www.zgswcn.com -> 200 [UTF-8] title=中国商报网"
+   ]
+  },
+  {
+   "name": "消费日报网",
+   "domain": "www.xfrb.com.cn",
+   "evidence": "title=消费日报网--贴近民生 服务百姓 | keywords=消费日报网，消费日报社，消费日报，消费，经济，消费市场，智能，健康，视频，旅游，食品，汽车，新能源，舆情，轻工行业，新闻，直播，访谈，房产，科技，家电，社会，地",
+   "tokens": [
+    "消费日报"
+   ],
+   "trace": [
+    "www.xfrb.com.cn -> 200 [utf-8] title=消费日报网--贴近民生 服务百姓 | keywords=消费日报网，消费日报社，消费日报，消费，经济，消费市场，智能，健康，视频，旅游，食品，汽车，新能源，舆情，轻工行业，新闻，直播，访谈，房产，科技，家电，社会，地"
+   ]
+  },
+  {
+   "name": "人民铁道网",
+   "domain": "www.peoplerail.com",
+   "evidence": "title=人民铁道网 - 中国铁路新闻门户 | keywords=人民铁道,人民铁道网,人民铁道报,铁路网,铁路网门户",
+   "tokens": [
+    "人民铁道"
+   ],
+   "trace": [
+    "www.peoplerail.com -> 200 [UTF-8] title=人民铁道网 - 中国铁路新闻门户 | keywords=人民铁道,人民铁道网,人民铁道报,铁路网,铁路网门户"
+   ]
+  },
+  {
+   "name": "中国基金报网",
+   "domain": "www.chnfund.com",
+   "evidence": "title=中国基金报 | keywords=中国基金报, 中国基金报官网, 理财师，基金，基金净值排名，新基金发行，基金推荐，基金分析，金融市场，理财产品，银行理财产品，信托，海外理财，黄金投资，保险，债",
+   "tokens": [
+    "中国基金报"
+   ],
+   "trace": [
+    "www.chnfund.com -> 200 [utf-8] title=中国基金报 | keywords=中国基金报, 中国基金报官网, 理财师，基金，基金净值排名，新基金发行，基金推荐，基金分析，金融市场，理财产品，银行理财产品，信托，海外理财，黄金投资，保险，债"
+   ]
+  },
+  {
+   "name": "国际金融报网",
+   "domain": "www.ifnews.com",
+   "evidence": "title=国际金融报社 | keywords=国际,金融,财经,银行,保险,基金,证券,地产,快消,汽车,TMT",
+   "tokens": [
+    "国际金融报"
+   ],
+   "trace": [
+    "www.ifnews.com -> 200 [utf-8] title=国际金融报社 | keywords=国际,金融,财经,银行,保险,基金,证券,地产,快消,汽车,TMT"
+   ]
+  },
+  {
+   "name": "中国经济新闻网",
+   "domain": "www.cet.com.cn",
+   "evidence": "title=中国经济新闻网－专业的经济媒体 | keywords=CET 中国 经济 新闻 专业 负责任 新闻网 媒体 经济新闻 经济媒体 新闻媒体",
+   "tokens": [
+    "中国经济时报",
+    "中国经济新闻网"
+   ],
+   "trace": [
+    "www.cet.com.cn -> 200 [gb2312] title=中国经济新闻网－专业的经济媒体 | keywords=CET 中国 经济 新闻 专业 负责任 新闻网 媒体 经济新闻 经济媒体 新闻媒体"
+   ]
+  },
+  {
+   "name": "中国农村网",
+   "domain": "www.crnews.net",
+   "evidence": "title=中国农村网",
+   "tokens": [
+    "中国农村网"
+   ],
+   "trace": [
+    "www.crnews.net -> 200 [utf-8] title=中国农村网"
+   ]
+  },
+  {
+   "name": "中国旅游新闻网",
+   "domain": "www.ctnews.com.cn",
+   "evidence": "title=中国旅游新闻网 | keywords=中国旅游新闻网官网,中国旅游新闻网,门户网站,中国旅游报社官网",
+   "tokens": [
+    "中国旅游报",
+    "中国旅游新闻网"
+   ],
+   "trace": [
+    "www.ctnews.com.cn -> 200 [UTF-8] title=中国旅游新闻网 | keywords=中国旅游新闻网官网,中国旅游新闻网,门户网站,中国旅游报社官网"
+   ]
+  },
+  {
+   "name": "中国审计报",
+   "domain": "www.audit.gov.cn",
+   "evidence": "title=中华人民共和国审计署 | keywords=审计署、中华人民共和国审计署、机构概况、新闻频道、公告报告、信息公开、审计之窗、公共服务、公众互动",
+   "tokens": [
+    "中国审计报",
+    "审计署"
+   ],
+   "trace": [
+    "www.audit.gov.cn -> 200 [UTF-8] title=中华人民共和国审计署 | keywords=审计署、中华人民共和国审计署、机构概况、新闻频道、公告报告、信息公开、审计之窗、公共服务、公众互动"
+   ]
+  },
+  {
+   "name": "中国体育报",
+   "domain": "www.sports.cn",
+   "evidence": "title=华奥星空网 - 体育产业平台 | keywords=中国体育产业平台,体育产业,全民健身,青少年体育,体育彩票,冰雪运动,体育协会,足球,篮球,排球,田径,马拉松,乒乓球,羽毛球,游泳,体操,手球,曲棍球,棒球,",
+   "tokens": [
+    "中国体育报",
+    "中国体育"
+   ],
+   "trace": [
+    "www.sports.cn -> 200 [utf8] title=华奥星空网 - 体育产业平台 | keywords=中国体育产业平台,体育产业,全民健身,青少年体育,体育彩票,冰雪运动,体育协会,足球,篮球,排球,田径,马拉松,乒乓球,羽毛球,游泳,体操,手球,曲棍球,棒球,"
+   ]
+  },
+  {
+   "name": "中国中医药报",
+   "domain": "www.cntcm.com.cn",
+   "evidence": "title=中国中医药网",
+   "tokens": [
+    "中国中医药报",
+    "中医药"
+   ],
+   "trace": [
+    "www.cntcm.com.cn -> 200 [utf-8] title=中国中医药网"
+   ]
+  },
+  {
+   "name": "澎湃新闻",
+   "domain": "www.thepaper.cn",
+   "evidence": "title=澎湃新闻-专注时政与思想-ThePaper.cn",
+   "tokens": [
+    "澎湃新闻",
+    "澎湃"
+   ],
+   "trace": [
+    "www.thepaper.cn -> 200 [utf-8] title=澎湃新闻-专注时政与思想-ThePaper.cn"
+   ]
+  },
+  {
+   "name": "界面新闻",
+   "domain": "www.jiemian.com",
+   "evidence": "title=界面新闻-只服务于独立思考的人群-Jiemian.com",
+   "tokens": [
+    "界面新闻",
+    "界面"
+   ],
+   "trace": [
+    "www.jiemian.com -> 200 [utf-8] title=界面新闻-只服务于独立思考的人群-Jiemian.com"
+   ]
+  },
+  {
+   "name": "千龙网",
+   "domain": "www.qianlong.com",
+   "evidence": "title=千龙网 | keywords=中国首都,北京新闻,北京政务,十六区县,东城,西城,朝阳,海淀,丰台,石景山,门头沟,房山,通州,顺义,大兴,昌平,平谷,怀柔,密云,延庆,北京新媒体,北京发布",
+   "tokens": [
+    "千龙网"
+   ],
+   "trace": [
+    "www.qianlong.com -> 200 [UTF-8] title=千龙网 | keywords=中国首都,北京新闻,北京政务,十六区县,东城,西城,朝阳,海淀,丰台,石景山,门头沟,房山,通州,顺义,大兴,昌平,平谷,怀柔,密云,延庆,北京新媒体,北京发布"
+   ]
+  },
+  {
+   "name": "新京报网",
+   "domain": "www.bjnews.com.cn",
+   "evidence": "title=新京报 - 好新闻，无止境 | keywords=新京报,电子报,报纸,传媒,时政,娱乐,财经,经济,民生,国内,国际,视频,杂志,访谈,评论,投票,专题,周刊,手机报,博客",
+   "tokens": [
+    "新京报"
+   ],
+   "trace": [
+    "www.bjnews.com.cn -> 200 [utf-8] title=新京报 - 好新闻，无止境 | keywords=新京报,电子报,报纸,传媒,时政,娱乐,财经,经济,民生,国内,国际,视频,杂志,访谈,评论,投票,专题,周刊,手机报,博客"
+   ]
+  },
+  {
+   "name": "荆楚网",
+   "domain": "www.cnhubei.com",
+   "evidence": "title=荆楚网-湖北日报网-湖北新闻-湖北门户 权威发布",
+   "tokens": [
+    "荆楚网",
+    "湖北日报"
+   ],
+   "trace": [
+    "www.cnhubei.com -> 200 [UTF-8] title=荆楚网-湖北日报网-湖北新闻-湖北门户 权威发布"
+   ]
+  },
+  {
+   "name": "南方网",
+   "domain": "www.southcn.com",
+   "evidence": "title=南方网_广东权威融媒平台 | keywords=要闻,讲习所,广东,中国,国际,经济,社会,直播,快报,融媒,网评,理论,专题,公告,英文,法治,大湾区,双创,汽车,时尚,文娱,房产,IT,旅游,教育,体育,",
+   "tokens": [
+    "南方网",
+    "南方日报"
+   ],
+   "trace": [
+    "www.southcn.com -> 200 [UTF-8] title=南方网_广东权威融媒平台 | keywords=要闻,讲习所,广东,中国,国际,经济,社会,直播,快报,融媒,网评,理论,专题,公告,英文,法治,大湾区,双创,汽车,时尚,文娱,房产,IT,旅游,教育,体育,"
+   ]
+  },
+  {
+   "name": "大众网",
+   "domain": "www.dzwww.com",
+   "evidence": "title=大众网",
+   "tokens": [
+    "大众网",
+    "大众日报"
+   ],
+   "trace": [
+    "www.dzwww.com -> 200 [utf-8] title=大众网"
+   ]
+  },
+  {
+   "name": "齐鲁网",
+   "domain": "www.iqilu.com",
+   "evidence": "title=齐鲁网_山东新闻视频第一门户_山东广播电视台主办 | keywords=齐鲁网，山东广播电视台，齐鲁民生，旅游，文化，论坛，短信，数码，汽车，手机，财经，科技",
+   "tokens": [
+    "齐鲁网",
+    "山东"
+   ],
+   "trace": [
+    "www.iqilu.com -> 200 [utf-8] title=齐鲁网_山东新闻视频第一门户_山东广播电视台主办 | keywords=齐鲁网，山东广播电视台，齐鲁民生，旅游，文化，论坛，短信，数码，汽车，手机，财经，科技"
+   ]
+  },
+  {
+   "name": "大河网",
+   "domain": "www.dahe.cn",
+   "evidence": "title=大河网 - 河南首家重点新闻网站 | 河南日报报业集团主办 | og:site_name=大河网 | keywords=大河网,大河报,河南日报,河南商报,大河论坛,今日加油,河南新闻,河南法治报,河南省政府网,大河客户端,清风中原,人事动向,大河户外,新闻联播",
+   "tokens": [
+    "大河网",
+    "河南日报"
+   ],
+   "trace": [
+    "www.dahe.cn -> 200 [UTF-8] title=大河网 - 河南首家重点新闻网站 | 河南日报报业集团主办 | og:site_name=大河网 | keywords=大河网,大河报,河南日报,河南商报,大河论坛,今日加油,河南新闻,河南法治报,河南省政府网,大河客户端,清风中原,人事动向,大河户外,新闻联播"
+   ]
+  },
+  {
+   "name": "红网",
+   "domain": "www.rednet.cn",
+   "evidence": "title=红网 精彩一点",
+   "tokens": [
+    "红网"
+   ],
+   "trace": [
+    "www.rednet.cn -> 200 [utf-8] title=红网 精彩一点"
+   ]
+  },
+  {
+   "name": "华声在线",
+   "domain": "www.voc.com.cn",
+   "evidence": "title=华声在线 | og:site_name=华声在线 | keywords=华声在线,湖南日报,时事报道,最新资讯,湖南市州,政策,健康,教育,投资,长沙美食,户外,投诉,文体,民生,乡村振兴,文旅,红培,湘问,评论,央媒看湖南,地方重",
+   "tokens": [
+    "华声在线"
+   ],
+   "trace": [
+    "www.voc.com.cn -> 200 [utf-8] title=华声在线 | og:site_name=华声在线 | keywords=华声在线,湖南日报,时事报道,最新资讯,湖南市州,政策,健康,教育,投资,长沙美食,户外,投诉,文体,民生,乡村振兴,文旅,红培,湘问,评论,央媒看湖南,地方重"
+   ]
+  },
+  {
+   "name": "华龙网",
+   "domain": "www.cqnews.net",
+   "evidence": "title= | og:site_name=华龙网 | keywords=华龙网，重庆新闻，重庆门户",
+   "tokens": [
+    "华龙网"
+   ],
+   "trace": [
+    "www.cqnews.net -> 200 [utf-8(ignore)] title= | og:site_name=华龙网 | keywords=华龙网，重庆新闻，重庆门户"
+   ]
+  },
+  {
+   "name": "封面新闻",
+   "domain": "www.thecover.cn",
+   "evidence": "title=封面新闻 - 封面传媒 | keywords=封面新闻",
+   "tokens": [
+    "封面新闻"
+   ],
+   "trace": [
+    "www.thecover.cn -> 200 [utf-8] title=封面新闻 - 封面传媒 | keywords=封面新闻"
+   ]
+  },
+  {
+   "name": "四川在线",
+   "domain": "www.scol.com.cn",
+   "evidence": "title=四川在线 - 四川第一门户网站 | keywords=四川门户网站，四川群众路线网，四川，成都，蓉城，天府，大熊猫，四川新闻，四川体育，四川人事，四川旅游，成都新闻，成都体育，成都人事，成都旅游，成都美女，成都美食",
+   "tokens": [
+    "四川在线",
+    "四川日报"
+   ],
+   "trace": [
+    "www.scol.com.cn -> 200 [utf-8] title=四川在线 - 四川第一门户网站 | keywords=四川门户网站，四川群众路线网，四川，成都，蓉城，天府，大熊猫，四川新闻，四川体育，四川人事，四川旅游，成都新闻，成都体育，成都人事，成都旅游，成都美女，成都美食"
+   ]
+  },
+  {
+   "name": "东南网",
+   "domain": "www.fjsen.com",
+   "evidence": "title=东南网-福建官方新闻门户 | keywords=福建,福建新闻,海峡,海西,台海新闻,东南新闻,福州,厦门,福建日报,海峡都市报,海峡导报,泉州,三明,龙岩,宁德,莆田,南平,漳州等八闽新闻,海西第一门户",
+   "tokens": [
+    "东南网"
+   ],
+   "trace": [
+    "www.fjsen.com -> 200 [utf-8] title=东南网-福建官方新闻门户 | keywords=福建,福建新闻,海峡,海西,台海新闻,东南新闻,福州,厦门,福建日报,海峡都市报,海峡导报,泉州,三明,龙岩,宁德,莆田,南平,漳州等八闽新闻,海西第一门户"
+   ]
+  },
+  {
+   "name": "中安在线",
+   "domain": "www.anhuinews.com",
+   "evidence": "title=中安在线｜安徽新闻｜安徽惟一重点新闻门户网站 | keywords=安徽重点新闻网站,安徽,江淮,安徽新闻,皖江,皖北,淮河,徽商,徽文化,合肥,芜湖,黄山,九华山,天柱山",
+   "tokens": [
+    "中安在线"
+   ],
+   "trace": [
+    "www.anhuinews.com -> 200 [UTF-8] title=中安在线｜安徽新闻｜安徽惟一重点新闻门户网站 | keywords=安徽重点新闻网站,安徽,江淮,安徽新闻,皖江,皖北,淮河,徽商,徽文化,合肥,芜湖,黄山,九华山,天柱山"
+   ]
+  },
+  {
+   "name": "浙江在线",
+   "domain": "www.zjol.com.cn",
+   "evidence": "title=浙江在线-浙江省委省政府新闻门户网站 | keywords=浙江在线,浙江省委省政府官网,浙江新闻,浙江人事,浙江政务,杭州房产,杭州买房,杭州新闻,原创新闻,突发新闻,独家报道,浙江身边新闻,浙江即时报,浙江挂号,网络",
+   "tokens": [
+    "浙江在线"
+   ],
+   "trace": [
+    "www.zjol.com.cn -> 200 [UTF-8] title=浙江在线-浙江省委省政府新闻门户网站 | keywords=浙江在线,浙江省委省政府官网,浙江新闻,浙江人事,浙江政务,杭州房产,杭州买房,杭州新闻,原创新闻,突发新闻,独家报道,浙江身边新闻,浙江即时报,浙江挂号,网络"
+   ]
+  },
+  {
+   "name": "中国江苏网",
+   "domain": "jsnews.jschina.com.cn",
+   "evidence": "title=江苏_中国江苏网 | keywords=江苏",
+   "tokens": [
+    "中国江苏网",
+    "新华报业"
+   ],
+   "trace": [
+    "jsnews.jschina.com.cn -> 200 [utf-8] title=江苏_中国江苏网 | keywords=江苏"
+   ]
+  },
+  {
+   "name": "中国吉林网",
+   "domain": "www.chinajilin.com.cn",
+   "evidence": "title=中国吉林网丨吉刻新闻 - 吉林省重点新闻网站 | keywords=吉林,吉网,吉林网,中国吉林,中国吉林网,吉林日报,城市晚报,吉林新闻,www.cnjiwang.com",
+   "tokens": [
+    "中国吉林网"
+   ],
+   "trace": [
+    "www.chinajilin.com.cn -> 200 [utf-8] title=中国吉林网丨吉刻新闻 - 吉林省重点新闻网站 | keywords=吉林,吉网,吉林网,中国吉林,中国吉林网,吉林日报,城市晚报,吉林新闻,www.cnjiwang.com"
+   ]
+  },
+  {
+   "name": "东北新闻网",
+   "domain": "www.nen.com.cn",
+   "evidence": "title=东北新闻网-权威媒体 辽宁门户 | keywords=东北新闻网、权威媒体、辽宁门户、辽宁新闻门户网站、辽宁、时评、民生问政、直播、财经、房产、文明辽宁、新闻、融 · 视频、消费维权、文艺、税务、政府采购",
+   "tokens": [
+    "东北新闻网"
+   ],
+   "trace": [
+    "www.nen.com.cn -> 200 [UTF-8] title=东北新闻网-权威媒体 辽宁门户 | keywords=东北新闻网、权威媒体、辽宁门户、辽宁新闻门户网站、辽宁、时评、民生问政、直播、财经、房产、文明辽宁、新闻、融 · 视频、消费维权、文艺、税务、政府采购"
+   ]
+  },
+  {
+   "name": "东北网",
+   "domain": "www.dbw.cn",
+   "evidence": "title=东北网-东北网 | keywords=东北网、黑龙江网络广播电视台",
+   "tokens": [
+    "东北网"
+   ],
+   "trace": [
+    "www.dbw.cn -> 200 [gb2312] title=东北网-东北网 | keywords=东北网、黑龙江网络广播电视台"
+   ]
+  },
+  {
+   "name": "南海网",
+   "domain": "www.hinews.cn",
+   "evidence": "title=南海网 -海南新闻网 - 权威媒体 海南门户 | keywords=海南权威新闻门户网站、海南新闻、海南新闻中心、海南新闻头条、海南新闻网、海南天气、海南自贸港新闻、海南自贸港、国际旅游岛、海南日报、南国都市报、海口新闻、文昌新",
+   "tokens": [
+    "南海网",
+    "海南日报"
+   ],
+   "trace": [
+    "www.hinews.cn -> 200 [utf-8] title=南海网 -海南新闻网 - 权威媒体 海南门户 | keywords=海南权威新闻门户网站、海南新闻、海南新闻中心、海南新闻头条、海南新闻网、海南天气、海南自贸港新闻、海南自贸港、国际旅游岛、海南日报、南国都市报、海口新闻、文昌新"
+   ]
+  },
+  {
+   "name": "云南网",
+   "domain": "www.yunnan.cn",
+   "evidence": "title=云南网，云南省重点新闻网站，世界看云南的窗口，云南看世界的视角 | keywords=云南,云南新闻,云南旅游,云南文化,云南经济,时政,云南省重点新闻网站",
+   "tokens": [
+    "云南网",
+    "云南日报"
+   ],
+   "trace": [
+    "www.yunnan.cn -> 200 [utf-8] title=云南网，云南省重点新闻网站，世界看云南的窗口，云南看世界的视角 | keywords=云南,云南新闻,云南旅游,云南文化,云南经济,时政,云南省重点新闻网站"
+   ]
+  },
+  {
+   "name": "中国甘肃网",
+   "domain": "www.gscn.com.cn",
+   "evidence": "title=中国甘肃网_甘肃省权威主流媒体 外宣窗口 | keywords=中国甘肃网,甘肃,甘肃新闻, 甘肃新闻发布，甘肃新闻网,兰州新闻，丝绸之路,一带一路,精准扶贫,敦煌文博会, 甘肃旅游,甘肃文化, 兰州,天水,平凉,嘉峪关,酒",
+   "tokens": [
+    "中国甘肃网"
+   ],
+   "trace": [
+    "www.gscn.com.cn -> 200 [utf-8] title=中国甘肃网_甘肃省权威主流媒体 外宣窗口 | keywords=中国甘肃网,甘肃,甘肃新闻, 甘肃新闻发布，甘肃新闻网,兰州新闻，丝绸之路,一带一路,精准扶贫,敦煌文博会, 甘肃旅游,甘肃文化, 兰州,天水,平凉,嘉峪关,酒"
+   ]
+  },
+  {
+   "name": "青海新闻网",
+   "domain": "www.qhnews.com",
+   "evidence": "title=青海新闻网 - 中共青海省委宣传部主管 青海日报社主办",
+   "tokens": [
+    "青海新闻网"
+   ],
+   "trace": [
+    "www.qhnews.com -> 200 [gb2312] title=青海新闻网 - 中共青海省委宣传部主管 青海日报社主办"
+   ]
+  },
+  {
+   "name": "长城网",
+   "domain": "www.hebei.com.cn",
+   "evidence": "title=长城网-长城新媒体_河北新闻网站_河北长城网 | keywords=河北新闻,时政要闻,热点新闻,新闻报道,新闻资讯,媒体热评,政府新闻,河北长城网,长城新媒体,河北新闻网站,河北媒体热评,河北新闻资讯,冀云融媒体平台",
+   "tokens": [
+    "长城网"
+   ],
+   "trace": [
+    "www.hebei.com.cn -> 200 [UTF-8] title=长城网-长城新媒体_河北新闻网站_河北长城网 | keywords=河北新闻,时政要闻,热点新闻,新闻报道,新闻资讯,媒体热评,政府新闻,河北长城网,长城新媒体,河北新闻网站,河北媒体热评,河北新闻资讯,冀云融媒体平台"
+   ]
+  },
+  {
+   "name": "黄河新闻网",
+   "domain": "www.sxgov.cn",
+   "evidence": "title=黄河新闻网_山西之窗 | keywords=山西,黄河,山西黄河新闻网,山西新闻,太原,大同,朔州,忻州,晋城,吕梁,晋中,长治,临汾,运城,阳泉,民生,国际新闻,国内新闻,财经,健康,社会,戏曲,民歌,",
+   "tokens": [
+    "黄河新闻网"
+   ],
+   "trace": [
+    "www.sxgov.cn -> 200 [utf-8] title=黄河新闻网_山西之窗 | keywords=山西,黄河,山西黄河新闻网,山西新闻,太原,大同,朔州,忻州,晋城,吕梁,晋中,长治,临汾,运城,阳泉,民生,国际新闻,国内新闻,财经,健康,社会,戏曲,民歌,"
+   ]
+  },
+  {
+   "name": "北方网",
+   "domain": "www.enorth.com.cn",
+   "evidence": "title=天津北方网——权威媒体 天津门户",
+   "tokens": [
+    "北方网"
+   ],
+   "trace": [
+    "www.enorth.com.cn -> 200 [gb2312] title=天津北方网——权威媒体 天津门户"
+   ]
+  },
+  {
+   "name": "内蒙古新闻网",
+   "domain": "www.nmgnews.com.cn",
+   "evidence": "title=内蒙古新闻网-内蒙古最大的综合性门户网站-中国百强新闻网 | keywords=内蒙古新闻,内蒙古新闻网,内蒙古日报,内蒙古日报社,内蒙古自治区,新闻中心,时政,党史,社会,地方,领导,经济,能源环保,乡村振兴,教育,科技,文化,饮食,娱乐",
+   "tokens": [
+    "内蒙古新闻网",
+    "正北方网"
+   ],
+   "trace": [
+    "www.nmgnews.com.cn -> 200 [utf-8] title=内蒙古新闻网-内蒙古最大的综合性门户网站-中国百强新闻网 | keywords=内蒙古新闻,内蒙古新闻网,内蒙古日报,内蒙古日报社,内蒙古自治区,新闻中心,时政,党史,社会,地方,领导,经济,能源环保,乡村振兴,教育,科技,文化,饮食,娱乐"
+   ]
+  },
+  {
+   "name": "黑龙江新闻网",
+   "domain": "www.hljnews.cn",
+   "evidence": "title=黑龙江新闻网 - 黑龙江日报报业集团 | keywords=黑龙江日报,生活报,冰城,黑龙江新闻,哈尔滨新闻,黑龙江政务,突发新闻,报纸,电子报,数字报,农业,经济,视频,健康,教育,美食,韩语",
+   "tokens": [
+    "黑龙江新闻网",
+    "哈尔滨"
+   ],
+   "trace": [
+    "www.hljnews.cn -> 200 [UTF-8] title=黑龙江新闻网 - 黑龙江日报报业集团 | keywords=黑龙江日报,生活报,冰城,黑龙江新闻,哈尔滨新闻,黑龙江政务,突发新闻,报纸,电子报,数字报,农业,经济,视频,健康,教育,美食,韩语"
+   ]
+  },
+  {
+   "name": "上观新闻网",
+   "domain": "www.jfdaily.com",
+   "evidence": "title=上观新闻-站上海，观天下 | keywords=上观,上观新闻,解放日报,上海,要闻,政情,财经,区情,城事,文化,天下,民声,互动,活动,视觉",
+   "tokens": [
+    "上观新闻",
+    "解放日报"
+   ],
+   "trace": [
+    "www.jfdaily.com -> 200 [utf-8] title=上观新闻-站上海，观天下 | keywords=上观,上观新闻,解放日报,上海,要闻,政情,财经,区情,城事,文化,天下,民声,互动,活动,视觉"
+   ]
+  },
+  {
+   "name": "新民网",
+   "domain": "www.xinmin.cn",
+   "evidence": "title=新民网 - 为民分忧 与民同乐 | keywords=新民网,新民晚报官网",
+   "tokens": [
+    "新民网",
+    "新民晚报"
+   ],
+   "trace": [
+    "www.xinmin.cn -> 200 [utf-8] title=新民网 - 为民分忧 与民同乐 | keywords=新民网,新民晚报官网"
+   ]
+  },
+  {
+   "name": "长江网",
+   "domain": "www.cjn.cn",
+   "evidence": "title=长江网 - 国家重点新闻网 | keywords=中央网信办,国家重点新闻网, 立足武汉,辐射长江,面向全国,新闻,政务,服务,商务,长江网APP、长江网APP下载",
+   "tokens": [
+    "长江网"
+   ],
+   "trace": [
+    "www.cjn.cn -> 200 [utf-8] title=长江网 - 国家重点新闻网 | keywords=中央网信办,国家重点新闻网, 立足武汉,辐射长江,面向全国,新闻,政务,服务,商务,长江网APP、长江网APP下载"
+   ]
+  }
+ ],
+ "unresolved": [
+  {
+   "name": "法治网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "法治网",
+    "法治日报"
+   ],
+   "trace": [
+    "www.legaldaily.com.cn -> 200 [utf-8] 标题未含专名 ['法治网', '法治日报'] | title="
+   ]
+  },
+  {
+   "name": "环球网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "环球网"
+   ],
+   "trace": [
+    "www.huanqiu.com -> 200 [utf-8] 标题未含专名 ['环球网'] | "
+   ]
+  },
+  {
+   "name": "海外网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "海外网",
+    "人民日报海外版"
+   ],
+   "trace": [
+    "www.haiwainet.cn -> 200 [utf-8(ignore)] 标题未含专名 ['海外网', '人民日报海外版'] | "
+   ]
+  },
+  {
+   "name": "理论网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "理论网",
+    "理论"
+   ],
+   "trace": [
+    "www.theory.cn -> 200 [utf-8] 标题未含专名 ['理论网', '理论'] | title=首页 - Theory思睿官网"
+   ]
+  },
+  {
+   "name": "中国妇女网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国妇女网"
+   ],
+   "trace": [
+    "www.women.org.cn -> 200 [UTF-8] 标题未含专名 ['中国妇女网'] | title=中华全国妇女联合会-首页"
+   ]
+  },
+  {
+   "name": "半月谈网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "半月谈"
+   ],
+   "trace": [
+    "www.banyuetan.org -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国税务报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国税务报",
+    "中国税网"
+   ],
+   "trace": [
+    "www.ctaxnews.net.cn -> 200 [utf-8] 标题未含专名 ['中国税务报', '中国税网'] | "
+   ]
+  },
+  {
+   "name": "环球人物网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "环球人物"
+   ],
+   "trace": [
+    "www.hqrww.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国县域经济报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "县域经济"
+   ],
+   "trace": [
+    "www.xianyuangjw.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "人民邮电报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "人民邮电报"
+   ],
+   "trace": [
+    "www.ptpress.com.cn -> 200 [utf-8] 标题未含专名 ['人民邮电报'] | title=人民邮电出版社 - 人民邮电出版社 | keywords=人民邮电出版社、科技出版、教育出版、大众出版，信息技术、通信、工业技术、科普、经济管理、摄影、艺术、运动与休闲、心理学、少儿、大中专教材"
+   ]
+  },
+  {
+   "name": "中国教育新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国教育报",
+    "中国教育新闻网"
+   ],
+   "trace": [
+    "www.jyb.cn -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国民族网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国民族网",
+    "中国民族报"
+   ],
+   "trace": [
+    "www.mzzjw.cn -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国环境网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国环境网",
+    "中国环境报"
+   ],
+   "trace": [
+    "www.cenews.com.cn -> 403 "
+   ]
+  },
+  {
+   "name": "中国知识产权资讯网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国知识产权报",
+    "知识产权资讯网"
+   ],
+   "trace": [
+    "www.iprnews.com -> 403 "
+   ]
+  },
+  {
+   "name": "中国安全生产网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国安全生产网",
+    "中国应急管理报"
+   ],
+   "trace": [
+    "www.aqsc.cn -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+   ]
+  },
+  {
+   "name": "民主与法制网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "民主与法制"
+   ],
+   "trace": [
+    "www.mzyfz.com -> 410 "
+   ]
+  },
+  {
+   "name": "中国经营网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国经营报",
+    "中国经营网"
+   ],
+   "trace": [
+    "www.cbihw.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "改革网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "改革网",
+    "中国改革报"
+   ],
+   "trace": [
+    "www.reform.org.cn -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+   ]
+  },
+  {
+   "name": "中国气象新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国气象新闻网",
+    "中国气象报"
+   ],
+   "trace": [
+    "www.nmc.cn -> 200 [UTF-8] 标题未含专名 ['中国气象新闻网', '中国气象报'] | title=关注阴晴冷暖，守望四时安康"
+   ]
+  },
+  {
+   "name": "中国绿色时报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国绿色时报",
+    "绿色中国"
+   ],
+   "trace": [
+    "www.cdfp.com.cn -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "农视网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "农视网",
+    "中国农业"
+   ],
+   "trace": [
+    "www.nongshiwang.com -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国交通新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国交通报",
+    "中国交通新闻网"
+   ],
+   "trace": [
+    "www.zgjtwz.com.cn -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国建设新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国建设报",
+    "中国建设新闻网"
+   ],
+   "trace": [
+    "www.chinajsb.cn -> 200 [utf-8(ignore)] 标题未含专名 ['中国建设报', '中国建设新闻网'] | "
+   ]
+  },
+  {
+   "name": "中国劳动保障新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国劳动保障报",
+    "劳动保障"
+   ],
+   "trace": [
+    "www.clnews.com.cn -> 200 [utf-8] 标题未含专名 ['中国劳动保障报', '劳动保障'] | title=长乐新闻网_长乐区互联网新闻中心 | keywords=长乐新闻网,长乐,长乐互联网中心,长乐区互联网新闻中心"
+   ]
+  },
+  {
+   "name": "中国组织人事报新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国组织人事报"
+   ],
+   "trace": [
+    "www.zzrsb.com.cn -> None URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+   ]
+  },
+  {
+   "name": "中国财经报网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国财经报"
+   ],
+   "trace": [
+    "www.cfn.cn -> 200 [utf-8] 标题未含专名 ['中国财经报'] | title=银行网-银行业信息交流平台-商业银行-城商行-农商行-官方-隶属于中金网投（北京）资产管理有限公司 | keywords=银行网，银行在线，中国银行业信息网络平台，中国银行业，银行， 股份制银行、城商行、农商行、村镇银行"
+   ]
+  },
+  {
+   "name": "中国市场监管新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国市场监管报",
+    "市场监管"
+   ],
+   "trace": [
+    "www.cmrn.com.cn -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+   ]
+  },
+  {
+   "name": "中国消费者网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国消费者报",
+    "中国消费网"
+   ],
+   "trace": [
+    "www.ccn.com.cn -> 521 "
+   ]
+  },
+  {
+   "name": "中国银行保险报网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国银行保险报",
+    "金融监管"
+   ],
+   "trace": [
+    "www.cfn.cn -> 200 [utf-8] 标题未含专名 ['中国银行保险报', '金融监管'] | title=银行网-银行业信息交流平台-商业银行-城商行-农商行-官方-隶属于中金网投（北京）资产管理有限公司 | keywords=银行网，银行在线，中国银行业信息网络平台，中国银行业，银行， 股份制银行、城商行、农商行、村镇银行"
+   ]
+  },
+  {
+   "name": "中国邮政快递报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国邮政快递报",
+    "快递"
+   ],
+   "trace": [
+    "www.cepnews.com.cn -> 200 [UTF-8] 标题未含专名 ['中国邮政快递报', '快递'] | title=中国环保新闻网|环保网 | keywords=环保,环保网,中国环保,中国环保网,环保新闻网,中国环保新闻网,环保门户网站,环保新闻,环保资讯,环保网站,环境,污染,环境污染,向污染宣战,污染治理,生态环境"
+   ]
+  },
+  {
+   "name": "中国煤炭报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国煤炭报"
+   ],
+   "trace": [
+    "www.ccn.com -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国医药报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国医药报"
+   ],
+   "trace": [
+    "www.cma.org.cn -> 200 [utf-8] 标题未含专名 ['中国医药报'] | title=中华医学会"
+   ]
+  },
+  {
+   "name": "中国民航报",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国民航报",
+    "民航局"
+   ],
+   "trace": [
+    "www.caacnews.com.cn -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "华夏经纬网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "华夏经纬"
+   ],
+   "trace": [
+    "www.huaxia.com -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "中国侨刊",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国侨刊"
+   ],
+   "trace": [
+    "www.chinaqk.com -> None URLError: <urlopen error timed out>"
+   ]
+  },
+  {
+   "name": "东方网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "东方网"
+   ],
+   "trace": [
+    "www.eastday.com -> 302 https://www.eastday.com/"
+   ]
+  },
+  {
+   "name": "北青网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "北青网",
+    "北京青年报"
+   ],
+   "trace": [
+    "www.ynet.com -> 200 [utf8] 标题未含专名 ['北青网', '北京青年报'] | title=首页_YNET.com北青新媒体",
+    "www.benber.com -> 200 [utf-8] 标题未含专名 ['北青网', '北京青年报'] | title=中投网-创新经济的智识 让投资者看到未来 | keywords=中投，投中，投资中国，中国投资，中投网，网投中国，投资网，投资信息，中国投资网，中网资讯，今日资本，中国财经，中国经济，创业投资网，投 资界，投资创业，创业项目"
+   ]
+  },
+  {
+   "name": "金羊网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "金羊网",
+    "羊城晚报"
+   ],
+   "trace": [
+    "www.ycwb.com -> 200 [utf-8(ignore)] 标题未含专名 ['金羊网', '羊城晚报'] | "
+   ]
+  },
+  {
+   "name": "上游新闻",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "上游新闻"
+   ],
+   "trace": [
+    "www.shangyexx.com -> None URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "cqcb.com -> 403 "
+   ]
+  },
+  {
+   "name": "广西新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "广西新闻网",
+    "广西日报"
+   ],
+   "trace": [
+    "www.gxnews.com.cn -> 412 "
+   ]
+  },
+  {
+   "name": "贵州网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "多彩贵州网"
+   ],
+   "trace": [
+    "www.gog.cn -> None ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+   ]
+  },
+  {
+   "name": "宁夏新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "宁夏新闻网"
+   ],
+   "trace": [
+    "www.nxnews.net -> 412 "
+   ]
+  },
+  {
+   "name": "天山网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "天山网"
+   ],
+   "trace": [
+    "www.ts.cn -> 200 [utf-8] 标题未含专名 ['天山网'] | "
+   ]
+  },
+  {
+   "name": "西部网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "西部网",
+    "陕西"
+   ],
+   "trace": [
+    "www.cnwest.com -> None URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 al"
+   ]
+  },
+  {
+   "name": "中国江西网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "中国江西网",
+    "大江网"
+   ],
+   "trace": [
+    "www.jxnews.com.cn -> None URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 al"
+   ]
+  },
+  {
+   "name": "山西新闻网",
+   "domain": null,
+   "evidence": "",
+   "tokens": [
+    "山西新闻网"
+   ],
+   "trace": [
+    "www.sxnews.cn -> 200 [utf-8] 标题未含专名 ['山西新闻网'] | title=绍兴网"
+   ]
+  }
+ ]
+}

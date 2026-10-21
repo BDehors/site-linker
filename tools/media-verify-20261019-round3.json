@@ -1,0 +1,178 @@
+{
+ "round": 3,
+ "method": "真实 Chromium（headless）渲染后读 document.title / og:site_name / 可见正文，含专名才算核实",
+ "promotedCount": 9,
+ "unresolvedCount": 15,
+ "promoted": [
+  {
+   "name": "海外网",
+   "domain": "www.haiwainet.cn",
+   "ok": true,
+   "evidence": "title=海外网_人民日报海外版官方网站_全球华人的网上家园 | og= | 命中「海外网」 | 落地 https://www.haiwainet.cn/",
+   "note": ""
+  },
+  {
+   "name": "中国妇女网",
+   "domain": "www.women.org.cn",
+   "ok": true,
+   "evidence": "title=中华全国妇女联合会-首页 | og= | 命中「中国妇女网」 | 落地 https://www.women.org.cn/",
+   "note": ""
+  },
+  {
+   "name": "中国税务报",
+   "domain": "www.ctaxnews.net.cn",
+   "ok": true,
+   "evidence": "title=中国税务报网络报 | og= | 命中「中国税务报」 | 落地 https://www.ctaxnews.net.cn/paper/pc/layout/202610/19/node_01.html",
+   "note": ""
+  },
+  {
+   "name": "金羊网",
+   "domain": "www.ycwb.com",
+   "ok": true,
+   "evidence": "title=金羊网-华南地区最出色的新闻网站 | og= | 命中「金羊网」 | 落地 https://www.ycwb.com/",
+   "note": ""
+  },
+  {
+   "name": "东方网",
+   "domain": "www.eastday.com",
+   "ok": true,
+   "evidence": "title=东方网 eastday | og= | 命中「东方网」 | 落地 https://www.eastday.com/",
+   "note": ""
+  },
+  {
+   "name": "中国环境网",
+   "domain": "www.cenews.com.cn",
+   "ok": true,
+   "evidence": "title=中国环境网_全国生态环境信息平台 | og= | 命中「中国环境网」 | 落地 https://www.cenews.com.cn/",
+   "note": ""
+  },
+  {
+   "name": "中国建设新闻网",
+   "domain": "www.chinajsb.cn",
+   "ok": true,
+   "evidence": "title=中国建设新闻网 | og= | 命中「中国建设报」 | 落地 https://www.chinajsb.cn/",
+   "note": ""
+  },
+  {
+   "name": "宁夏新闻网",
+   "domain": "www.nxnews.net",
+   "ok": true,
+   "evidence": "title=宁夏新闻网 - 加载中... | og= | 命中「宁夏新闻网」 | 落地 https://www.nxnews.net/",
+   "note": ""
+  },
+  {
+   "name": "中国江西网",
+   "domain": "www.jxnews.com.cn",
+   "ok": true,
+   "evidence": "title=大江网 | og= | 命中「中国江西网」 | 落地 https://www.jxnews.com.cn/",
+   "note": ""
+  }
+ ],
+ "unresolved": [
+  {
+   "name": "法治网",
+   "domain": "www.legaldaily.com.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.legaldaily.com.cn/\nCall log:\n\u001b[2m  - navigating to \"https://ww"
+  },
+  {
+   "name": "环球网",
+   "domain": "www.huanqiu.com",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title= | 落地 https://www.huanqiu.com/"
+  },
+  {
+   "name": "天山网",
+   "domain": "www.ts.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title=验证码 | 落地 https://www.ts.cn/"
+  },
+  {
+   "name": "中国知识产权资讯网",
+   "domain": "www.iprnews.com",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title=Attention Required! | Cloudflare | 落地 https://independentpoliticalreport.com/"
+  },
+  {
+   "name": "中国消费者网",
+   "domain": "www.ccn.com.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title= | 落地 https://www.ccn.com.cn/"
+  },
+  {
+   "name": "广西新闻网",
+   "domain": "www.gxnews.com.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title=Environment Checking | 落地 https://www.gxnews.com.cn/"
+  },
+  {
+   "name": "西部网",
+   "domain": "www.cnwest.com",
+   "ok": false,
+   "evidence": "",
+   "note": "page.goto: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www.cnwest.com/\nCall log:\n\u001b[2m  - navigating to \"https://w"
+  },
+  {
+   "name": "半月谈网",
+   "domain": "www.banyuetan.org",
+   "ok": false,
+   "evidence": "",
+   "note": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.banyuetan.org/\", waiting until \"domcon"
+  },
+  {
+   "name": "中国教育新闻网",
+   "domain": "www.jyb.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.jyb.cn/\", waiting until \"domcontentloa"
+  },
+  {
+   "name": "民主与法制网",
+   "domain": "www.mzyfz.com",
+   "ok": false,
+   "evidence": "",
+   "note": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.mzyfz.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.mzyfz."
+  },
+  {
+   "name": "上游新闻",
+   "domain": "cqcb.com",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title= | 落地 https://cqcb.com/"
+  },
+  {
+   "name": "中国气象新闻网",
+   "domain": "www.nmc.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title=关注阴晴冷暖，守望四时安康 | 落地 https://www.nmc.cn/"
+  },
+  {
+   "name": "中国煤炭报",
+   "domain": "www.ccn.com",
+   "ok": false,
+   "evidence": "",
+   "note": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ccn.com/\", waiting until \"domcontentlo"
+  },
+  {
+   "name": "理论网",
+   "domain": "www.theory.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title=首页 - Theory思睿官网 | 落地 https://www.theory.cn/"
+  },
+  {
+   "name": "人民邮电报",
+   "domain": "www.ptpress.com.cn",
+   "ok": false,
+   "evidence": "",
+   "note": "渲染后仍无专名；title=人民邮电出版社 - 人民邮电出版社 | 落地 https://www.ptpress.com.cn/"
+  }
+ ]
+}
